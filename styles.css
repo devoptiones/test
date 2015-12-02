@@ -200,7 +200,7 @@ nav.sidebar {
     height: 100%;
 }
 .toolbar-btn {
-    line-height: 4;
+    line-height: 3.5;
     padding: 0 1rem;
 }
 .mobile-nav-btn.active {
@@ -226,6 +226,10 @@ button, button:hover, a.button, a.button:hover {
 }
 tbody > tr:hover {
     background-color: rgba(42, 48, 82, .1);
+}
+tr:focus {
+    background-color: rgba(42, 48, 82, .2);
+    outline: none;
 }
 .info-icon {
     display: inline-block;
@@ -258,10 +262,11 @@ tbody > tr:hover {
 }
 .sidebar-btn {
     height: 4rem;
+    padding: 0;
 }
 .sidebar-btn img {
     width: 1.5rem;
-    margin-right: 1rem;
+    padding: 0 1rem;
 }
 .toolbar-btn img {
     width: 1.5rem;
@@ -290,17 +295,25 @@ fieldset {
     margin-bottom: 1rem;
 }
 .radio-selector {
+    display: flex;
+    margin-bottom: .5rem;
     border-radius: 2px;
     background-color: rgba(42, 48, 82, .1);
 }
+.radio-item {
+    flex: 1;
+}
 .radio-item label {
-    padding: .5rem;
     cursor: pointer;
-    line-height: 3;
+    line-height: 2;
+    display: block;
+    text-align: center;
 }
 .radio-item img {
     margin-right: .5rem;
     width: 1.5rem;
+    background-color: white;
+    box-shadow: 0 0 0 1px white;
 }
 .radio-item input {
     display: none;
@@ -425,6 +438,7 @@ button::-moz-focus-inner, input::-moz-focus-outer {
 .mobile-form * {
     display: block;
 }
+
 /* fixes for iOS */
 input {
     -webkit-user-select: text;
@@ -435,6 +449,7 @@ input {
 select {
     background-color: white;
 }
+
 .asset-selector-container {
     display: flex;
     flex-direction: column;
@@ -448,4 +463,7 @@ select {
 }
 .asset-list tbody tr {
     cursor: pointer;
+}
+.tick-sparklines {
+    text-align: center;
 }
