@@ -1,26 +1,12 @@
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'), url(Roboto-Light.ttf) format('ttf');
-}
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(Roboto-Regular.ttf) format('ttf');
-}
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'), url(Roboto-Bold.ttf) format('ttf');
-}
 * {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -ms-user-drag: none;
+    user-drag: none;
 }
 html {
     font-size: 12px;
@@ -393,6 +379,9 @@ fieldset {
 .login-content {
     max-width: 400px;
     margin: auto;
+}
+.login-content input, .login-content button, .login-content select {
+    width: 100%;
 }
 div[role=tabs] {
     display: flex;
