@@ -107,6 +107,7 @@ table {
 }
 
 .mobile-page {
+    height: 100%;
     font-size: 15px;
     display: flex;
     align-items: center;
@@ -450,14 +451,16 @@ select {
     text-align: center;
 }
 
+.resizer-vertical, .resizer-horizontal {
+    background: rgba(127, 127, 127, .25);
+}
+
 .resizer-vertical {
-    background: #eee;
     cursor: e-resize;
     width: .25rem;
 }
 
 .resizer-horizontal {
-    background: #eee;
     cursor: s-resize;
     height: .25rem;
 }
@@ -514,4 +517,9 @@ select {
     margin: auto;
     flex-direction: column;
     align-content: space-between;
+}
+
+#theme-wrapper {
+    width: 100%;
+    height: 100%;
 }
