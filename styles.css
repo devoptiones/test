@@ -37,12 +37,27 @@ body {
     justify-content: space-between;
 }
 
-#header span {
+#header > span, #logo {
     line-height: 4;
 }
 
-#left-panel, #right-panel, #bottom-panel {
+#header > * {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.left-panel, .right-panel, .#bottom-panel {
     overflow: auto;
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.right-panel div[role=tabs] {
+    flex-direction: column;
+    align-content: flex-start;
 }
 
 #workarea {
@@ -104,7 +119,10 @@ table {
     margin-top: -1rem;
     margin-right: -1rem;
     float: right;
-    box-shadow: none;
+}
+
+.close-btn, .close-btn:hover {
+    box-shadow: none !important;
 }
 
 .mobile-page {
@@ -119,12 +137,13 @@ table {
 
 .mobile-content {
     padding: .5rem;
-    width: 100%;
+    min-width: 350px;
     flex: 1;
     display: flex;
     align-content: stretch;
     flex-direction: column;
     overflow: auto;
+    width: 100%;
 }
 
 .mobile-content tbody tr {
@@ -142,10 +161,6 @@ header {
     display: flex;
     padding: 0 1rem;
     justify-content: space-between;
-}
-
-header span {
-    line-height: 4;
 }
 
 nav.sidebar {
@@ -198,12 +213,12 @@ nav.sidebar {
 
 .range-selector-items {
     display: flex;
-    width: 15rem;
+    width: 100%;
     margin: .25rem .25rem 0 .25rem;
     justify-content: space-between;
 }
 
-.market-submarket-selector, .asset-search, .asset-search > input, .trading-times-date-picker > input {
+.market-submarket-picker, .asset-search, .asset-search > input, .trading-times-date-picker > input, input[type=range] {
     width: 100%;
 }
 
@@ -408,6 +423,14 @@ div[role=tabs] {
     color: white;
 }
 
+.tab-content, #workarea {
+    padding: .5rem;
+}
+
+.market-submarket-picker {
+    margin-bottom: .5rem;
+}
+
 .button-list {
     display: inline;
 }
@@ -433,7 +456,7 @@ select {
     background-color: white;
 }
 
-.asset-selector-container {
+.asset-picker-container {
     display: flex;
     flex-direction: column;
 }
@@ -448,6 +471,14 @@ select {
 
 .asset-list tbody tr {
     cursor: pointer;
+}
+
+.asset-list tbody tr.selected {
+    background-color: rgba(42, 48, 82, 0.2);
+}
+
+.inverse .asset-list tbody tr.selected {
+    background-color: rgba(221, 221, 221, 0.2);
 }
 
 .tick-sparklines {
@@ -534,3 +565,39 @@ select {
 .trade-parameters .range-selector {
     margin-top: .5rem;
 }
+
+#language-picker, #theme-picker {
+    width: 100%;
+}
+
+#deposit-btn, .language-picker {
+    margin: .5rem 0;
+}
+
+#deposit-btn {
+    line-height: 1.75;
+}
+
+.balance {
+    font-size: 1.5rem;
+    line-height: 2 !important;
+}
+
+/* Start of hack, mimic radio group using button */
+.radio-button {
+    flex: 1;
+    color: rgba(64, 68, 72, 1);
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.selected-radio.radio-button {
+    background-color: #2a3052;
+    border-radius: 2px;
+    color: white;
+}
+
+.radio-button:hover {
+    box-shadow: none!important;
+}
+/* Start of hack, mimic radio group using button */
