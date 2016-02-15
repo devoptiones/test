@@ -59,8 +59,17 @@ body {
     background: inherit;
     box-shadow: none;
     margin: 0;
-    padding: .5rem;
     width: 3rem;
+}
+
+.workspace-panel {
+    padding: .5rem;
+    overflow: auto;
+    display: flex;
+}
+
+.workspace-panel > div {
+    width: 100%;
 }
 
 #workarea {
@@ -655,8 +664,12 @@ select {
     visibility: visible;
 }
 
+.asset-picker-item td {
+    text-align: left;
+}
+
 .asset-picker-trade-btn {
-    padding: .4rem;
+    padding: .25rem .5rem;
     visibility: hidden;;
 }
 
@@ -687,6 +700,7 @@ div[role=tablist] {
 }
 
 div[role=tablist].vertical {
+    min-width: 3rem;
     flex-direction: column;
     align-content: flex-start;
 }
@@ -695,8 +709,17 @@ div[role=tab][aria-selected=true] {
     background: #2a3052;
 }
 
+div[role=tab][aria-selected=true] {
+    box-shadow: inset 2px 0 0 0 #e98024;
+}
+
+#right-tab-list > div[role=tab][aria-selected=true] {
+    box-shadow: inset -2px 0 0 0 #e98024;
+}
+
 div[role=tab] {
     flex: 1;
+    height: 3rem;
     cursor: pointer;
     line-height: 2;
     display: block;
@@ -704,10 +727,11 @@ div[role=tab] {
 }
 
 div[role=tab] img {
-    margin-right: .5rem;
-    width: 1.5rem;
-    background-color: white;
-    box-shadow: 0 0 0 1px white;
+    margin: .875rem;
+}
+
+ div[role=tablist].vertical div[role=tab] {
+    flex: inherit;
 }
 
 div[role=tabpanel] {
@@ -718,4 +742,9 @@ div[role=tabpanel] {
     display: flex;
     justify-content: center;
     align-content: center;
+}
+
+#assets-select, #categories-select {
+    min-width: 10rem;
+    width: 100%;
 }
