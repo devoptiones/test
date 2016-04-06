@@ -758,7 +758,10 @@ td.right, th.right {
 td.row-id {
     font-weight: bold;
 }
-
+.row-spacer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 /*.panel-active {
     box-shadow: 0 0 0 2px white, 0 0 0 4px rgba(42, 48, 82, .25);
 }*/
@@ -858,72 +861,60 @@ input[type=number]::-webkit-outer-spin-button {
     height: 250px;
     margin-bottom: 1rem;
 }
-
-.switch {
+.onoffswitch {
     position: relative;
-    display: inline-block;
+    width: 10rem;
 }
-
-.switch-input {
+.onoffswitch-checkbox {
     display: none;
 }
-
-.switch-label {
+.onoffswitch-label {
     display: block;
-    width: 2.5rem;
-    height: 1rem;
-    margin-left: .15rem;
-    margin-top: .15rem;
-    text-indent: 150%;
-    clip: rect(0 0 0 0);
-    color: #2a3052;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.switch-label:before, .switch-label:after {
-    content: "";
-    display: block;
-    position: absolute;
+    overflow: hidden;
     cursor: pointer;
+    border-radius: 2rem;
 }
-
-.switch-label:before {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(127, 127, 127, .5);
-    border-radius: 9999em;
-    transition: #2a3052 0.1s ease;
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
 }
-
-.switch-label:after {
-    top: 0;
-    left: 0;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    background-color: #2a3052;
-    /*box-shadow: 0 0 2px rgba(127, 127, 127, .4);*/
-    transition: left 0.1s ease;
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 2rem;
+    line-height: 2rem;
+    color: white;
 }
-
-/* When input is checked */
-
-.switch-input:checked + .switch-label {
-    /* Switch Rail */
-    /* Switch Knob */
+.onoffswitch-inner:before {
+    content: "Start Later";
+    padding-left: 1rem;
+    background-color: rgba(42, 48, 82, 1);
+    color: #FFFFFF;
 }
-.switch-input:checked + .switch-label:before {
-    background-color: rgba(42, 48, 82, .5);
+.onoffswitch-inner:after {
+    content: "Start Now";
+    padding-right: 1rem;
+    background-color: rgba(42, 48, 82, .25);
+    color: rgba(42, 48, 82, 1);
+    text-align: right;
 }
-.switch-input:checked + .switch-label:after {
-    left: 1.5rem;
+.onoffswitch-switch {
+    display: block;
+    width: 2rem;
+    margin: 0.5rem;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in 0s;
 }
-
-.switch {
-    margin: 1rem 0;
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0em;
 }
 
 #duration-fields input, #duration-fields select, .payout-picker input, .payout-picker fieldset {
@@ -962,9 +953,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin-left: .5rem;
 }
 
-height: 100%;
-
-
 .trades-tabs .full-trade-params {
     flex: 1;
 }
@@ -975,4 +963,8 @@ height: 100%;
 
 .trade-type-picker {
     display: flex;
+}
+
+#profit-loss-label {
+    font-size: large;
 }
