@@ -126,7 +126,12 @@ table {
     background-color: rgba(255, 255, 255, .1);
 }
 
+.close-btn {
+    cursor: pointer;
+}
+
 div[role=tab] .close-btn, .panel-active .close-btn {
+    background: #2a3052;
     fill: white;
 }
 
@@ -634,27 +639,13 @@ tr[tabindex] {
     margin-bottom: 5px;
 }
 
-.trades-grid, .trades-tabs, .trades-jp, #workarea > div[role=tablist] {
+#workarea > div[role=tablist] {
     display: flex;
     flex: 1;
 }
 
-.trades-jp {
-    flex-direction: column;
-}
-
-.trades-tabs, .trades-grid > .trade-panel {
-    flex-direction: column;
-}
-
-.trades-tabs div[role=tablist] {
-    min-height: 1.6rem;
-    width: 100%;
-    margin-bottom: .5rem;
-}
-
-.trades-tabs .close-btn {
-    float: right;
+.trades {
+    flex: 1;
 }
 
 .asset-picker-item:hover .asset-picker-trade-btn {
@@ -670,12 +661,8 @@ tr[tabindex] {
     visibility: hidden;;
 }
 
-.trade-panel, .trade-container {
+.trade-panel {
     flex: 1;
-}
-
-.trade-container + .trade-container {
-    margin-left: .5rem;
 }
 
 .toggle-buttons .btn-secondary.checked {
@@ -768,13 +755,6 @@ td.row-id {
 .row-spacer {
     margin-top: 1rem;
     margin-bottom: 1rem;
-}
-/*.panel-active {
-    box-shadow: 0 0 0 2px white, 0 0 0 4px rgba(42, 48, 82, .25);
-}*/
-
-.trade-container:not(.panel-active) {
-    opacity: .75;
 }
 
 .trade-header {
@@ -931,8 +911,19 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .modal {
+    max-height: 100%;
     min-width: 320px;
+    overflow: auto;
 }
+
+.drop-down {
+    max-height: 100%;
+    min-width: 320px;
+    overflow: auto;
+    padding: .5rem;
+    background: white;
+}
+
 .contract-details h6 {
     text-align: center;
 }
@@ -946,18 +937,18 @@ input[type=number]::-webkit-outer-spin-button {
     margin-left: 0.5rem;
 }
 
-.trades-tabs .trade-panel, .trades-grid .trade-panel {
+.trade-panel {
     display: flex;
     flex-direction: row-reverse;
 }
 
-.trades-tabs .trade-chart {
-    flex: 2;
+.trade-chart {
+    flex: 1;
     margin-left: .5rem;
 }
 
-.trades-tabs .full-trade-params {
-    flex: 1;
+.full-trade-params {
+    max-width: 12rem;
 }
 
 #type-category-picker {
@@ -983,11 +974,52 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100% !important;
 }
 
-.trades-grid {
-    flex-wrap: wrap;
+/* ===== */
+
+.layout-btn-container {
+    width: 17rem;
+    padding: 1rem;
+    background: #2a3052;
+    color: white;
 }
 
-/* ===== */
+.layout-btn, .trades {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.layout-row-lbl {
+    width: 5rem;
+    line-height: 2;
+}
+
+.layout-btn-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.layout-btn {
+    cursor: pointer;
+    padding: .25rem;
+    width: 2rem;
+    height: 2rem;
+    opacity: .75;
+}
+
+.active > .layout-btn, .layout-btn:hover {
+    opacity: 1;
+}
+
+.layout-mini, .trade-panel {
+    flex: 1;
+}
+
+.layout-mini {
+    background-color: white;
+    border-radius: 1px;
+    margin: 1px;
+}
 
 .layout-1-1 {
 
@@ -1047,4 +1079,39 @@ input[type=number]::-webkit-outer-spin-button {
 
 .layout-4-5 > div:nth-child(4) {
     flex-basis: 100%;
+}
+
+.layout-5-1 > div:nth-child(1) {
+    flex-basis: 100%;
+}
+
+.layout-5-2 {
+    flex-direction: column;
+}
+
+.layout-5-2 > div:nth-child(5) {
+    flex-basis: 100%;
+}
+
+.layout-5-3 {
+    flex-direction: column;
+}
+
+.layout-5-3 > div:nth-child(1) {
+    flex-basis: 100%;
+}
+
+.layout-5-4 > div:nth-child(1),
+.layout-5-4 > div:nth-child(2) {
+    flex-basis: 40%;
+}
+
+.layout-5-5 > div:nth-child(1),
+.layout-5-5 > div:nth-child(2),
+.layout-5-5 > div:nth-child(3), {
+    flex-basis: 30%;
+}
+.layout-5-5 > div:nth-child(4),
+.layout-5-5 > div:nth-child(5) {
+    flex-basis: 40%;
 }
