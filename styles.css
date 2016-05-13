@@ -143,7 +143,7 @@ div[role=tab] .close-btn, .panel-active .close-btn {
 }
 
 .mobile-content {
-    min-width: 350px;
+    min-width: 320px;
     flex: 1;
     display: flex;
     align-content: stretch;
@@ -1029,11 +1029,6 @@ input[type=number]::-webkit-outer-spin-button {
     border: 1px solid rgba(42,48,82,0.1);
 }
 
-.contract-receipt-container {
-    overflow: auto;
-    margin-right: .5rem;
-}
-
 .picker-label {
     cursor: pointer;
     padding-left: .25rem;
@@ -1122,14 +1117,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 .resizer-vertical {
     display: flex;
-    align-items: center;
+    align-items: stretch;
 }
 
 .resizer-vertical .resizer-handle {
     width: 4px;
-    height: 2rem;
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 3px 0;
+    border-left: 1px dotted rgba(255, 255, 255, 0.5);
+    border-right: 1px dotted rgba(255, 255, 255, 0.5);
 }
 
 .info-icon {
@@ -1141,4 +1136,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .statement-row {
     cursor: pointer;
+}
+
+.barrier-input {
+    display: flex;
 }
