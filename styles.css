@@ -324,7 +324,7 @@ nav.sidebar {
     padding: .5rem;
 }
 
-.buy-btn, .buy-again-btn {
+.buy-btn, .buy-again-btn, .sell-at-market-btn {
     font-size: 1.25rem;
     padding: .5rem;
     width: 100%;
@@ -911,10 +911,11 @@ input[type=number]::-webkit-outer-spin-button {
 .onoffswitch-switch {
     display: block;
     width: 2em;
-    margin: 0.5em;
+    height: 1.5em;
+    margin: 0.25em;
     background: #FFFFFF;
     right: 7em;
-    position: absolute; top: 0; bottom: 0;
+    position: absolute;
     border-radius: 2em;
     transition: all 0.3s ease-in 0s;
 }
@@ -927,12 +928,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 #duration-fields input, #duration-fields select, .payout-picker input, .payout-picker fieldset {
     width: 100%;
-}
-
-.sell-at-market-btn {
-    height: 2.5rem;
-    width: 100%;
-    margin-top: 1rem;
 }
 
 .modal {
@@ -951,10 +946,6 @@ input[type=number]::-webkit-outer-spin-button {
     z-index: 10000;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
     border-radius: 2px;
-}
-
-.contract-details h6 {
-    text-align: center;
 }
 
 #earning-percentage {
@@ -987,7 +978,7 @@ input[type=number]::-webkit-outer-spin-button {
     flex-direction: column;
 }
 
-#profit-loss-label {
+.profit-loss-label {
     font-size: large;
 }
 
@@ -1068,7 +1059,7 @@ input[type=number]::-webkit-outer-spin-button {
 .horizontal .trade-params > *,
 .mobile-content .trade-params > * {
     flex: 1;
-    min-width: 10rem;
+    f-webkit-flex: 1 1 auto;         /* workaround for safari bug */
 }
 
 .horizontal .trade-params > div,
@@ -1089,12 +1080,17 @@ input[type=number]::-webkit-outer-spin-button {
     flex-direction: column;
 }
 
-.duration-input, .forward-starting-input {
+.duration-input, .forward-starting-group, .forward-starting-input {
     display: flex;
 }
 
-.duration-input > *, .forward-starting-input > * {
+.forward-starting-group {
+    flex-direction: column;
+}
+
+.duration-input > *, .forward-starting-group > * {
     flex: 1;
+    -webkit-flex: 1 1 auto;         /* workaround for safari bug */
 }
 
 .trade-params label {
@@ -1140,4 +1136,35 @@ input[type=number]::-webkit-outer-spin-button {
 
 .barrier-input {
     display: flex;
+}
+
+.contract-details {
+    display: flex;
+}
+
+.contract-detail {
+    display: flex;
+    background-color: fred;
+}
+
+.contract-detail > *:first-child {
+    width: 7rem;
+    opacity: .5;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.horizontal .contract-detail {
+    flex-direction: column;
+    margin: 0 .5rem .5rem 0;
+}
+
+.horizontal .trade-panel-receipt {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vertical .contract-receipt {
+    overflow: auto;
+    max-width: 15rem;
 }
