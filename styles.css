@@ -329,7 +329,7 @@ nav.sidebar {
 }
 
 .buy-btn, .buy-again-btn, .sell-at-market-btn {
-    font-size: 1.25rem;
+    font-size: 1.25em;
     padding: .5rem;
     width: 100%;
 }
@@ -1179,7 +1179,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .contract-receipt {
-    border-left: rgba(42, 48, 82, 1);
     border-style: solid;
     padding-left: .5rem;
 }
