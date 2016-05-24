@@ -332,7 +332,10 @@ nav.sidebar {
 .buy-btn, .buy-again-btn, .sell-at-market-btn {
     font-size: 1.25em;
     padding: .5rem;
-    width: auto;
+}
+
+.vertical .buy-btn, .vertical .buy-again-btn {
+    width: 100%;
 }
 
 fieldset {
@@ -517,7 +520,7 @@ select {
     display: flex;
     flex-direction: column;
     padding: .5rem;
-    width: 20rem;
+    width: 16rem;
     min-width: 12rem;
 }
 
@@ -833,7 +836,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .trade-type-picker {
     width: 20rem;
-    height: 20rem;
+    height: 17rem;
 }
 
 #type-pairs {
@@ -842,9 +845,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .type-pair {
-    flex: 1 1 auto;
     display: flex;
-    margin: .25rem .5rem;
     cursor: pointer;
 }
 
@@ -1045,8 +1046,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .vertical .trade-params, .vertical .contract-receipt-container {
     overflow: auto;
-    width: 12rem;
-    margin: 0 .5rem;
+    width: 10rem;
+    margin-left: .5rem;
 }
 
 .horizontal .trade-params,
@@ -1066,7 +1067,7 @@ input[type=number]::-webkit-outer-spin-button {
 .horizontal .trade-params > div,
 .mobile-content .trade-params > div {
     margin-right: .5rem;
-    width: 12rem;
+    width: 10rem;
 }
 
 .vertical .trade-params {
@@ -1157,7 +1158,7 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 2px;
 }
 
-.modal .contract-detail {
+.modal .contract-detail, .vertical .contract-detail {
     width: 100%;
     margin-left: -.25rem;
 }
@@ -1210,7 +1211,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .contract-receipt {
-    margin-left: 1rem;
+    margin-left: .5rem;
 }
 
 .receipt-header {
