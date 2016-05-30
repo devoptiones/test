@@ -19,6 +19,7 @@ input::-webkit-clear-button { /* Removes blue cross */
 .disabled {
     opacity: 0.2;
 }
+
 /* Web Layout */
 
 #root, #screen {
@@ -33,12 +34,6 @@ input::-webkit-clear-button { /* Removes blue cross */
     max-height: calc(100% - 6rem);
 }
 
-#mid-panel {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-}
-
 #screen {
     flex-direction: column;
 }
@@ -48,26 +43,6 @@ input::-webkit-clear-button { /* Removes blue cross */
     background: #2a3052;
     color: white;
     justify-content: space-between;
-}
-
-.left-panel, .right-panel, .bottom-panel {
-    overflow: auto;
-}
-
-.right-panel {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.right-panel .radio-item {
-    flex: none;
-}
-
-.right-panel .radio-item img {
-    background: inherit;
-    box-shadow: none;
-    margin: 0;
-    width: 3rem;
 }
 
 .workspace-panel {
@@ -84,48 +59,12 @@ table {
     margin-bottom: 0;
 }
 
-.market-hierarchy {
-    font-size: .8em;
-}
-
 .wide-form {
     max-width: 420px;
 }
 
 .logo-text {
     padding: 1rem;
-}
-
-.panel {
-    border: 2px solid #2a3052;
-    position: absolute;
-    background: white;
-}
-
-.panel-title {
-    color: white;
-    background: #2a3052;
-    height: 2em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.panel-title label {
-    margin-left: .5rem;
-}
-
-.panel-content {
-    height: calc(100% - 2em);
-    overflow: auto;
-}
-.panel-btn, .panel-btn:hover {
-    background: transparent;
-    border: none;
-    padding: .5rem;
-}
-
-.panel-btn:hover, .toolbar-btn:hover, .sidebar-btn:hover {
-    background-color: rgba(255, 255, 255, .1);
 }
 
 .close-btn {
@@ -336,7 +275,6 @@ nav.sidebar {
 .buy-btn, .buy-again-btn, .sell-at-market-btn {
     font-size: 1.25em;
     padding: .5rem;
-    margin-right: .2rem;
 }
 
 .vertical .buy-btn, .vertical .buy-again-btn {
@@ -463,16 +401,6 @@ fieldset {
     transition: .3s;
 }
 
-#web-sidebar {
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    width: 4rem;
-    background: #2a3052;
-}
-
 .toolbar-hint {
     position: absolute;
     padding: .75rem;
@@ -486,10 +414,6 @@ fieldset {
 
 .toolbar-btn:hover > .toolbar-hint {
     visibility: visible;
-}
-
-#web-sidebar .toolbar-btn {
-    height: 4rem;
 }
 
 .button-list {
@@ -638,7 +562,7 @@ select {
     margin-top: .5rem;
 }
 
-#language-picker, #theme-picker {
+.language-picker, .theme-picker {
     width: 100%;
 }
 
@@ -684,21 +608,6 @@ select {
 
 .radio-button:hover {
     box-shadow: none!important;
-}
-
-.snippet {
-    background-color: rgba(42, 48, 82, .05);
-    padding: .5rem;
-    border-radius: 2px;
-}
-
-.collapsible .focusable:focus + .collapsed {
-    display: block;
-}
-
-.collapsible-title {
-    cursor: pointer;
-    font-size: 1rem;
 }
 
 .form-label {
@@ -790,12 +699,12 @@ td.row-id {
     fill: white;
 }
 
+input[type=number] {
+    -moz-appearance: textfield;
+}
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0;
 }
 
 .payout-picker-input {
@@ -805,13 +714,6 @@ input[type=number]::-webkit-outer-spin-button {
 .payout-picker button {
     width: 2rem;
     height: 2rem;
-}
-
-.payout-full {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .open-notice, .closed-notice {
@@ -845,7 +747,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: 17rem;
 }
 
-#type-pairs {
+.type-pairs-list {
     display: flex;
     flex-direction: column;
 }
@@ -875,66 +777,7 @@ input[type=number]::-webkit-outer-spin-button {
     box-shadow: 0 0 0 1px white;
 }
 
-.onoffswitch {
-    position: relative;
-    width: 100%;
-    margin-bottom: .25rem;
-}
-.onoffswitch-checkbox {
-    display: none;
-}
-.onoffswitch-label {
-    display: block;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 2em;
-}
-.onoffswitch-inner {
-    display: block;
-    width: 200%;
-    margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
-}
-.onoffswitch-inner:before, .onoffswitch-inner:after {
-    display: block;
-    float: left;
-    width: 50%;
-    height: 2em;
-    line-height: 2em;
-    color: white;
-}
-.onoffswitch-inner:before {
-    content: "Start Later";
-    padding-left: 1em;
-    background-color: rgba(42, 48, 82, 1);
-    color: #FFFFFF;
-}
-.onoffswitch-inner:after {
-    content: "Start Now";
-    padding-right: 1em;
-    background-color: rgba(42, 48, 82, .25);
-    color: rgba(42, 48, 82, 1);
-    text-align: right;
-}
-.onoffswitch-switch {
-    display: block;
-    width: 2em;
-    height: 1.5em;
-    margin: 0.25em;
-    background: #FFFFFF;
-    right: 7em;
-    position: absolute;
-    border-radius: 2em;
-    transition: all 0.3s ease-in 0s;
-}
-.onoffswitch-checkbox.checked + .onoffswitch-label .onoffswitch-inner {
-    margin-left: 0;
-}
-.onoffswitch-checkbox.checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0em;
-}
-
-#duration-fields input, #duration-fields select, .payout-picker input, .payout-picker fieldset {
+.payout-picker input, .payout-picker fieldset {
     width: 100%;
 }
 
@@ -956,10 +799,6 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 2px;
 }
 
-#earning-percentage {
-    margin-left: 0.5rem;
-}
-
 .trade-panel {
     display: flex;
     flex: 1;
@@ -978,16 +817,8 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: stretch;
 }
 
-/*.mobile-content .trade-chart-container {
-    margin-bottom: .5rem;
-}*/
-
 .trade-chart {
     width: 100%;
-}
-
-#type-category-picker {
-    flex-direction: column;
 }
 
 .profit-loss-label {
@@ -999,31 +830,14 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100% !important;
 }
 
-.col-val {
-    border: 1px solid rgba(42,48,82,0.1);
-    text-align: center;
-    padding-right: 0.2rem;
-    padding-left: 0.2rem;
-}
-
-.col-header {
-    color: #2a3052;
-    font-weight: bold;
-    background: rgba(42,48,82,0.1);
-    padding: .5rem .25rem;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 1.4;
-    border: 1px solid rgba(42,48,82,0.1);
-}
-
 .picker-label {
     cursor: pointer;
     padding-left: .25rem;
-    line-height: 2;
+    line-height: 2.5;
     margin-bottom: .5rem;
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
     background: rgba(42, 48, 82, 0.1);
     border-radius: 2px;
 }
@@ -1050,11 +864,6 @@ input[type=number]::-webkit-outer-spin-button {
     display: none;
 }
 
-#duration-fields {
-    display: flex;
-    flex-direction: column;
-}
-
 .vertical .trade-params, .vertical .contract-receipt-container {
     overflow: auto;
     width: 10rem;
@@ -1067,6 +876,12 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.mobile-content .trade-params {
+    margin-top: .5rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .horizontal .trade-params > :not(button),
@@ -1093,8 +908,13 @@ input[type=number]::-webkit-outer-spin-button {
     flex-direction: column;
 }
 
-.duration-input, .forward-starting-group, .forward-starting-input {
+.duration-input, .forward-starting-input, .mobile-content .forward-starting-picker {
     display: flex;
+    flex-direction: row;
+}
+
+.mobile-content .payout-display {
+    flex-direction: row;
 }
 
 .forward-starting-input input {
@@ -1106,8 +926,8 @@ input[type=number]::-webkit-outer-spin-button {
     flex: 1;
 }
 
-.forward-starting-group {
-    flex-direction: column;
+.duration-input input, .duration-input select {
+    width: 100%;
 }
 
 .start-time-selector {
@@ -1121,7 +941,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: .5rem;
 }
 
-.duration-input > *, .forward-starting-group > * {
+.duration-input > *, .forward-starting-picker > * {
     flex: 1;
     -webkit-flex: 1 1 auto;         /* workaround for safari bug */
 }
@@ -1174,7 +994,6 @@ input[type=number]::-webkit-outer-spin-button {
 /* default */
 .contract-detail {
     display: flex;
-    padding: .125rem;
     margin: .125rem;
     border-radius: 2px;
 }
@@ -1182,6 +1001,7 @@ input[type=number]::-webkit-outer-spin-button {
 .modal .contract-detail, .vertical .contract-detail {
     width: 100%;
     margin-left: -.25rem;
+    padding: .125rem;
 }
 
 .contract-detail > span {
@@ -1214,6 +1034,10 @@ input[type=number]::-webkit-outer-spin-button {
     max-width: 15rem;
 }
 
+.mobile-content .contract-receipt {
+    margin: 0;
+}
+
 .modal h5 {
     margin: -.5rem 0 .5rem 0;
     text-align: center;
@@ -1233,13 +1057,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .contract-receipt {
     margin-left: .5rem;
-}
-
-.receipt-header {
-    font-size: large;
-    font-weight: 300;
-    text-align: center;
-    padding: 0.5rem;
 }
 
 .payout-display span {
