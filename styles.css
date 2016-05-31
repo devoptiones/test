@@ -850,6 +850,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .mobile-content .trade-params > div > label {
     flex: 1;
+    line-height: 2;
 }
 
 .mobile-content .trade-params > div > div {
@@ -891,6 +892,10 @@ input[type=number]::-webkit-outer-spin-button {
     min-width: 10rem;
 }
 
+.mobile-content .trade-params > div {
+    display: flex;
+}
+
 .vertical .trade-params {
     flex-direction: row-reverse;
 }
@@ -904,7 +909,10 @@ input[type=number]::-webkit-outer-spin-button {
     flex-direction: column;
 }
 
-.duration-input, .forward-starting-input, .mobile-content .forward-starting-picker {
+.duration-input,
+.forward-starting-input,
+.mobile-content .forward-starting-picker,
+.mobile-content .payout-picker {
     display: flex;
     flex-direction: row;
 }
