@@ -766,7 +766,7 @@ nav.sidebar {
 
 .vertical .contract-detail {
   width: 100%;
-  padding: 0.125rem; }
+  padding: 0.125rem 0; }
 
 .vertical .contract-receipt {
   overflow: auto;
@@ -896,7 +896,7 @@ nav.sidebar {
     .start-time-selector > label + label {
       margin-left: 3px; }
     .start-time-selector > label > input {
-      margin: 3px 3px 3px 6px; }
+      margin: 0 .5rem; }
 
 .duration-text {
   padding: 0.5rem; }
