@@ -3,7 +3,7 @@
 
 .article-preview {
   text-decoration: none;
-  color: #888; }
+  color: #404448; }
   .article-preview h2 {
     font-size: 1.4rem;
     margin: 1rem 0; }
@@ -20,20 +20,6 @@
   width: 100%;
   overflow: auto; }
 
-#screen, #root {
-  width: 100%;
-  height: 100%;
-  display: flex; }
-
-.open-notice, .closed-notice {
-  padding: 0.2em 0.4em;
-  opacity: 0.75;
-  font-size: 80%;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: white;
-  border-radius: 2px; }
-
 .vertical .trade-params, .vertical .contract-receipt-container {
   overflow: auto;
   width: 10rem;
@@ -44,10 +30,8 @@
   flex-direction: row;
   flex-wrap: wrap; }
 
-.payout-picker-input .btn-flat:hover, .start-time-selector label:hover {
-  background: #2a3052;
-  color: white;
-  box-shadow: none; }
+.payout-picker-input .btn-flat:hover, .start-time-selector label:hover, .picker-label:hover {
+  box-shadow: inset 0 0 0 1px rgba(42, 48, 82, 0.5); }
 
 .asset-picker-filter {
   min-height: 5rem; }
@@ -64,7 +48,7 @@
   .asset-list tr {
     cursor: pointer; }
   .asset-list tbody tr.selected {
-    background-color: rgba(42, 48, 82, 0.2); }
+    background-color: rgba(42, 48, 82, 0.25); }
 
 .asset-search {
   width: 100%; }
@@ -72,24 +56,10 @@
     width: 100%; }
 
 .inverse .asset-list tbody tr.selected {
-  background-color: rgba(221, 221, 221, 0.2); }
+  background-color: rgba(42, 48, 82, 0.25); }
 
 .asset-picker-item td {
   text-align: left; }
-
-#screen, #root {
-  width: 100%;
-  height: 100%;
-  display: flex; }
-
-.open-notice, .closed-notice {
-  padding: 0.2em 0.4em;
-  opacity: 0.75;
-  font-size: 80%;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: white;
-  border-radius: 2px; }
 
 .vertical .trade-params, .vertical .contract-receipt-container {
   overflow: auto;
@@ -101,18 +71,21 @@
   flex-direction: row;
   flex-wrap: wrap; }
 
-.payout-picker-input .btn-flat:hover, .start-time-selector label:hover {
-  background: #2a3052;
-  color: white;
-  box-shadow: none; }
+.payout-picker-input .btn-flat:hover, .start-time-selector label:hover, .picker-label:hover {
+  box-shadow: inset 0 0 0 1px rgba(42, 48, 82, 0.5); }
 
 body {
   height: 100%;
   overflow: hidden; }
 
-#screen {
+.screen {
   font-size: 12px;
   flex-direction: column; }
+
+.screen, .root {
+  width: 100%;
+  height: 100%;
+  display: flex; }
 
 input::-webkit-calendar-picker-indicator {
   display: none; }
@@ -124,26 +97,10 @@ input::-webkit-clear-button {
 .disabled {
   opacity: 0.2; }
 
-#panels {
+.panels {
   flex: 1;
   display: flex;
   max-height: calc(100% - 6rem); }
-
-#header {
-  display: flex;
-  background: #2a3052;
-  color: white;
-  justify-content: space-between; }
-  #header #hamburger-btn {
-    padding: 1rem;
-    margin-left: 1rem; }
-    #header #hamburger-btn > .sidebar {
-      top: -300px !important;
-      left: inherit;
-      right: 0; }
-  #header #hamburger-opener:checked + #hamburger-btn > .sidebar {
-    top: 3.5rem !important;
-    left: inherit; }
 
 .workspace-panel {
   overflow: auto;
@@ -238,7 +195,8 @@ input[type=range] {
 
 .buy-btn {
   font-size: 1.25em;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  width: 100%; }
 
 .buy-again-btn {
   font-size: 1.25em;
@@ -291,38 +249,6 @@ fieldset {
 
 .spacer {
   flex: 1; }
-
-#hamburger-opener {
-  display: none; }
-  #hamburger-opener:checked + #hamburger-btn > .sidebar {
-    left: 0.5rem;
-    transition: 0.3s; }
-
-#hamburger-btn {
-  cursor: pointer; }
-  #hamburger-btn > .sidebar {
-    position: absolute;
-    left: -300px;
-    z-index: 995; }
-
-#hamburger-overlay {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 1;
-  visibility: visible;
-  transition: 0.3s;
-  z-index: 985; }
-
-#hamburger-closer {
-  display: none; }
-  #hamburger-closer:checked + #hamburger-overlay {
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s; }
 
 .toolbar-hint {
   position: absolute;
@@ -417,27 +343,9 @@ select {
       margin-left: 0.25rem;
       height: 1.75rem; }
 
-.toggle-buttons {
-  margin: 0.5rem; }
-  .toggle-buttons .btn-secondary {
-    width: 3rem;
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow: none; }
-    .toggle-buttons .btn-secondary.checked {
-      background: rgba(255, 255, 255, 0.8); }
-
 .balance {
   font-size: 1.5rem;
   line-height: 2 !important; }
-
-.radio-button {
-  flex: 1;
-  color: #404448;
-  background-color: transparent;
-  box-shadow: none;
-  padding: 0.5em; }
-  .radio-button:hover {
-    box-shadow: none !important; }
 
 .form-label {
   font-weight: 500;
@@ -471,9 +379,6 @@ th.left {
 th.right {
   text-align: right; }
 
-.row-spacer {
-  margin: 0.5rem 0; }
-
 input[type=number] {
   -moz-appearance: textfield; }
 
@@ -482,6 +387,15 @@ input[type=number]::-webkit-inner-spin-button {
 
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none; }
+
+.open-notice, .closed-notice {
+  padding: 0.2em 0.4em;
+  opacity: 0.75;
+  font-size: 80%;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 2px; }
 
 .open-notice {
   background: green; }
@@ -541,6 +455,8 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 0 0.5rem;
   background: rgba(42, 48, 82, 0.1);
   box-shadow: none; }
+  .btn-flat:hover {
+    background: rgba(42, 48, 82, 0.1) !important; }
 
 input[type=date]::-webkit-inner-spin-button {
   display: none;
@@ -571,11 +487,6 @@ nav.sidebar {
   margin: -3.5rem -.5rem -.5rem; }
 
 .sidebar span {
-  color: white; }
-
-.selected-radio.radio-button {
-  background-color: #2a3052;
-  border-radius: 2px;
   color: white; }
 
 #right-tab-list > div[role=tab][aria-selected=true] {
@@ -639,19 +550,53 @@ nav.sidebar {
 .digit-stats-digit {
   text-align: center; }
 
-#screen, #root {
-  width: 100%;
-  height: 100%;
-  display: flex; }
-
-.open-notice, .closed-notice {
-  padding: 0.2em 0.4em;
-  opacity: 0.75;
-  font-size: 80%;
-  font-weight: bold;
-  text-transform: uppercase;
+.header {
+  display: flex;
+  background: #2a3052;
   color: white;
-  border-radius: 2px; }
+  justify-content: space-between; }
+  .header #hamburger-btn {
+    padding: 1rem;
+    margin-left: 1rem; }
+    .header #hamburger-btn > .sidebar {
+      top: -300px !important;
+      left: inherit;
+      right: 0; }
+  .header #hamburger-opener:checked + #hamburger-btn > .sidebar {
+    top: 3.5rem !important;
+    left: inherit; }
+
+#hamburger-opener {
+  display: none; }
+  #hamburger-opener:checked + #hamburger-btn > .sidebar {
+    left: 0.5rem;
+    transition: 0.3s; }
+
+#hamburger-btn {
+  cursor: pointer; }
+  #hamburger-btn > .sidebar {
+    position: absolute;
+    left: -300px;
+    z-index: 995; }
+
+#hamburger-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+  z-index: 985; }
+
+#hamburger-closer {
+  display: none; }
+  #hamburger-closer:checked + #hamburger-overlay {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s; }
 
 .vertical .trade-params, .vertical .contract-receipt-container {
   overflow: auto;
@@ -663,10 +608,8 @@ nav.sidebar {
   flex-direction: row;
   flex-wrap: wrap; }
 
-.payout-picker-input .btn-flat:hover, .start-time-selector label:hover {
-  background: #2a3052;
-  color: white;
-  box-shadow: none; }
+.payout-picker-input .btn-flat:hover, .start-time-selector label:hover, .picker-label:hover {
+  box-shadow: inset 0 0 0 1px rgba(42, 48, 82, 0.5); }
 
 .mobile-page {
   height: 100%;
@@ -706,11 +649,6 @@ nav.sidebar {
     margin-top: 0.5rem;
     flex-direction: column;
     flex-wrap: nowrap; }
-    .mobile-content .trade-params > div {
-      margin-right: 0.5rem;
-      min-width: 11rem; }
-    .mobile-content .trade-params > :not(button) {
-      flex: 1; }
   .mobile-content .forward-starting-picker {
     display: flex;
     flex-direction: row; }
@@ -790,20 +728,6 @@ nav.sidebar {
 .statement-row {
   cursor: pointer; }
 
-#screen, #root {
-  width: 100%;
-  height: 100%;
-  display: flex; }
-
-.open-notice, .closed-notice {
-  padding: 0.2em 0.4em;
-  opacity: 0.75;
-  font-size: 80%;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: white;
-  border-radius: 2px; }
-
 .vertical .trade-params, .vertical .contract-receipt-container {
   overflow: auto;
   width: 10rem;
@@ -814,10 +738,8 @@ nav.sidebar {
   flex-direction: row;
   flex-wrap: wrap; }
 
-.payout-picker-input .btn-flat:hover, .start-time-selector label:hover {
-  background: #2a3052;
-  color: white;
-  box-shadow: none; }
+.payout-picker-input .btn-flat:hover, .start-time-selector label:hover, .picker-label:hover {
+  box-shadow: inset 0 0 0 1px rgba(42, 48, 82, 0.5); }
 
 .vertical > [role=tab] {
   padding: 0.25rem 0.25rem 0.25rem 0.1rem; }
@@ -828,9 +750,6 @@ nav.sidebar {
   width: 100%; }
   .vertical .sell-at-market-btn + .buy-again-btn {
     margin-top: 0.5rem; }
-
-.vertical .buy-btn {
-  width: 100%; }
 
 .vertical .buy-again-btn {
   width: 100%; }
@@ -987,10 +906,6 @@ nav.sidebar {
   align-items: stretch;
   background: rgba(42, 48, 82, 0.1);
   border-radius: 2px; }
-  .picker-label:hover {
-    color: white;
-    background: #2a3052;
-    border: none; }
   .picker-label img {
     height: 2rem;
     padding: 0.25rem 0; }
