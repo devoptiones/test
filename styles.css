@@ -30,7 +30,7 @@
   flex-direction: row;
   flex-wrap: wrap; }
 
-.payout-picker-input .btn-flat:hover, .start-time-selector label:hover, .picker-label:hover {
+.btn-flat:hover, .start-time-selector label:hover, .picker-label:hover {
   box-shadow: inset 0 0 0 1px rgba(42, 48, 82, 0.5); }
 
 .asset-picker-filter {
@@ -71,7 +71,7 @@
   flex-direction: row;
   flex-wrap: wrap; }
 
-.payout-picker-input .btn-flat:hover, .start-time-selector label:hover, .picker-label:hover {
+.btn-flat:hover, .start-time-selector label:hover, .picker-label:hover {
   box-shadow: inset 0 0 0 1px rgba(42, 48, 82, 0.5); }
 
 body {
@@ -451,8 +451,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 .btn-flat {
   color: #2a3052;
-  font-size: 1.5rem;
-  padding: 0 0.5rem;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding: 0;
+  height: 2rem;
+  width: 2rem;
   background: rgba(42, 48, 82, 0.1);
   box-shadow: none; }
   .btn-flat:hover {
@@ -608,7 +611,7 @@ nav.sidebar {
   flex-direction: row;
   flex-wrap: wrap; }
 
-.payout-picker-input .btn-flat:hover, .start-time-selector label:hover, .picker-label:hover {
+.btn-flat:hover, .start-time-selector label:hover, .picker-label:hover {
   box-shadow: inset 0 0 0 1px rgba(42, 48, 82, 0.5); }
 
 .mobile-page {
@@ -742,7 +745,7 @@ nav.sidebar {
   flex-direction: row;
   flex-wrap: wrap; }
 
-.payout-picker-input .btn-flat:hover, .start-time-selector label:hover, .picker-label:hover {
+.btn-flat:hover, .start-time-selector label:hover, .picker-label:hover {
   box-shadow: inset 0 0 0 1px rgba(42, 48, 82, 0.5); }
 
 .vertical > [role=tab] {
@@ -809,9 +812,10 @@ nav.sidebar {
 .trade-action {
   text-transform: capitalize; }
 
-.payout-picker-input {
+.numeric-input {
   display: flex; }
-  .payout-picker-input input {
+  .numeric-input input {
+    text-align: center;
     width: calc(100% - 4rem); }
 
 .trade-type-picker {
@@ -890,7 +894,7 @@ nav.sidebar {
   .start-time-selector > label {
     flex: 1;
     cursor: pointer;
-    line-height: 2.5 !important;
+    line-height: 2rem !important;
     background: rgba(42, 48, 82, 0.1);
     border-radius: 2px; }
     .start-time-selector > label + label {
@@ -904,15 +908,15 @@ nav.sidebar {
 .picker-label {
   cursor: pointer;
   padding-left: 0.25rem;
-  line-height: 2.5;
+  line-height: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   background: rgba(42, 48, 82, 0.1);
   border-radius: 2px; }
   .picker-label img {
-    height: 2rem;
-    padding: 0.25rem 0; }
+    height: 1.5rem;
+    margin: 0.25rem 0; }
 
 .payout-picker button {
   width: 2rem;
@@ -924,9 +928,6 @@ nav.sidebar {
 .trade-params label {
   text-transform: uppercase;
   line-height: 1.5; }
-
-.barrier-picker input {
-  width: 100%; }
 
 .trade-header {
   display: flex;
