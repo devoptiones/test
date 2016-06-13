@@ -551,7 +551,10 @@ nav.sidebar {
   text-align: center; }
 
 .digit-stats-digit {
-  text-align: center; }
+  margin: .25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .header {
   display: flex;
@@ -655,7 +658,10 @@ nav.sidebar {
     display: flex;
     margin-top: 0.5rem;
     flex-direction: column;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    min-height: 200px; }
+  .mobile-content .sell-at-market-btn, .mobile-content .buy-again-btn {
+    width: 100%; }
   .mobile-content .forward-starting-picker {
     display: flex;
     flex-direction: row; }
@@ -869,7 +875,9 @@ nav.sidebar {
   .duration-input input {
     max-width: 50%; }
   .duration-input select {
-    max-width: 50%; }
+    max-width: 50%;
+    background-color: rgba(42, 48, 82, 0.1);
+    border: none; }
   .duration-input > * {
     flex: 1; }
 
