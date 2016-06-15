@@ -1,13 +1,3 @@
-.article {
-  margin: 0 1rem; }
-
-.article-preview {
-  text-decoration: none;
-  color: #404448; }
-  .article-preview h2 {
-    font-size: 1.4rem;
-    margin: 1rem 0; }
-
 .asset-details {
   width: 100%; }
   .asset-details h4 {
@@ -651,9 +641,22 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex-direction: column;
   flex: 1; }
 
+.news-list-card, .article {
+  margin: .5em;
+  font-size: 1rem; }
+
 .news-list-card {
-  margin: 0 0.25em;
   overflow: auto; }
+
+.article h1, .article-preview h2 {
+  font-size: 1.5rem;
+  margin: 0 0 .5rem 0; }
+
+.article-preview {
+  text-decoration: none;
+  color: #404448; }
+  .article-preview p {
+    margin-bottom: 2rem; }
 
 .portfolio-row {
   cursor: pointer; }
