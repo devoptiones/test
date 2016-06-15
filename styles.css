@@ -546,6 +546,14 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .inverse .asset-list tbody tr.selected {
   background-color: rgba(42, 48, 82, 0.25); }
 
+.inverse .btn-flat:hover,
+.inverse .start-time-selector label:hover,
+.inverse .picker-label:hover {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5); }
+
+.inverse input {
+  border: none !important; }
+
 .highcharts-background {
   fill: transparent; }
 
@@ -738,9 +746,6 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .statement-row {
   cursor: pointer; }
 
-.btn-flat:hover, .start-time-selector label:hover, .picker-label:hover {
-  box-shadow: inset 0 0 0 1px rgba(42, 48, 82, 0.5); }
-
 .vertical > [role=tab] {
   padding: 0.5rem 0.25rem 0.5rem 0.1rem; }
   .vertical > [role=tab] > span {
@@ -819,6 +824,11 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .numeric-input input {
     text-align: center;
     width: calc(100% - 4rem); }
+
+.btn-flat:hover,
+.start-time-selector label:hover,
+.picker-label:hover {
+  box-shadow: inset 0 0 0 1px rgba(42, 48, 82, 0.5); }
 
 .trade-type-picker {
   width: 20rem;
