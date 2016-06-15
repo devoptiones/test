@@ -117,6 +117,9 @@ header {
   .drop-down + .full-screen-overlay {
     background: rgba(0, 0, 0, 0.1); }
 
+.inverse .drop-down {
+  background: #1d1d24; }
+
 .market-submarket-picker {
   width: 100%; }
 
@@ -701,6 +704,12 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex: 1;
   min-width: 25rem; }
 
+.settings-card {
+  width: 100%; }
+
+.setting-container {
+  margin: 0 .5rem; }
+
 .statement-card {
   display: flex;
   flex-direction: column;
@@ -828,6 +837,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
   padding: 0.25rem;
   background: white;
   border-radius: 2px; }
+
+.inverse .trade-panel {
+  background: #1d1d24; }
 
 .trade-chart-container {
   overflow: hidden;
