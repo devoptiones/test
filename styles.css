@@ -32,9 +32,6 @@
   .asset-search > input {
     width: 100%; }
 
-.inverse .asset-list tbody tr.selected {
-  background-color: rgba(42, 48, 82, 0.25); }
-
 .asset-picker-item td {
   text-align: left; }
 
@@ -116,9 +113,6 @@ header {
   border-radius: 2px; }
   .drop-down + .full-screen-overlay {
     background: rgba(0, 0, 0, 0.1); }
-
-.inverse .drop-down {
-  background: #1d1d24; }
 
 .market-submarket-picker {
   width: 100%; }
@@ -540,6 +534,21 @@ input[type=time]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none; }
 
+.inverse .drop-down, .inverse .trade-panel {
+  background: #1d1d24; }
+
+.inverse .picker-label, .inverse select, .inverse .start-time-selector > label, .inverse .btn-flat {
+  background-color: #2a3052 !important; }
+
+.inverse .btn-flat, .inverse .article-preview {
+  color: #ddd; }
+
+.inverse .asset-list tbody tr.selected {
+  background-color: rgba(42, 48, 82, 0.25); }
+
+.highcharts-background {
+  background: red !important; }
+
 * {
   -webkit-tap-highlight-color: transparent; }
 
@@ -837,9 +846,6 @@ input[type=time]::-webkit-calendar-picker-indicator {
   padding: 0.25rem;
   background: white;
   border-radius: 2px; }
-
-.inverse .trade-panel {
-  background: #1d1d24; }
 
 .trade-chart-container {
   overflow: hidden;
