@@ -547,6 +547,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none; }
 
+* {
+  -webkit-tap-highlight-color: transparent; }
+
 .mobile-page {
   height: 100%;
   font-size: 15px;
