@@ -547,7 +547,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   background-color: rgba(42, 48, 82, 0.25); }
 
 .highcharts-background {
-  background: red !important; }
+  fill: transparent; }
 
 * {
   -webkit-tap-highlight-color: transparent; }
@@ -652,6 +652,12 @@ input[type=time]::-webkit-calendar-picker-indicator {
   display: flex;
   flex-direction: column;
   flex: 1; }
+
+@media (orientation: landscape) {
+  .trade-panel {
+    flex-direction: row !important; }
+  .trade-params {
+    margin-left: .5rem; } }
 
 .news-list-card, .article {
   margin: .5em;
@@ -908,7 +914,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
       margin: 0 .5rem; }
 
 .duration-text {
-  padding: 0.5rem; }
+  line-height: 2;
+  margin-left: 0.5rem; }
 
 .picker-label {
   cursor: pointer;
