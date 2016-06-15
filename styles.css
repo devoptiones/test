@@ -20,19 +20,6 @@
   width: 100%;
   overflow: auto; }
 
-.vertical .trade-params, .vertical .contract-receipt-container {
-  overflow: auto;
-  width: 10rem;
-  margin-right: 0.5rem; }
-
-.horizontal .trade-params {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-
-.btn-flat:hover, .start-time-selector label:hover, .picker-label:hover {
-  box-shadow: inset 0 0 0 1px rgba(42, 48, 82, 0.5); }
-
 .asset-picker-filter {
   min-height: 5rem; }
 
@@ -61,19 +48,6 @@
 .asset-picker-item td {
   text-align: left; }
 
-.vertical .trade-params, .vertical .contract-receipt-container {
-  overflow: auto;
-  width: 10rem;
-  margin-right: 0.5rem; }
-
-.horizontal .trade-params {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-
-.btn-flat:hover, .start-time-selector label:hover, .picker-label:hover {
-  box-shadow: inset 0 0 0 1px rgba(42, 48, 82, 0.5); }
-
 body {
   height: 100%;
   overflow: hidden; }
@@ -86,13 +60,6 @@ body {
   width: 100%;
   height: 100%;
   display: flex; }
-
-input::-webkit-calendar-picker-indicator {
-  display: none; }
-
-input::-webkit-clear-button {
-  -webkit-appearance: none;
-  margin: 0; }
 
 .disabled {
   opacity: 0.2; }
@@ -379,15 +346,6 @@ th.left {
 th.right {
   text-align: right; }
 
-input[type=number] {
-  -moz-appearance: textfield; }
-
-input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none; }
-
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none; }
-
 .open-notice, .closed-notice {
   padding: 0.2em 0.4em;
   opacity: 0.75;
@@ -408,29 +366,6 @@ input[type=number]::-webkit-outer-spin-button {
   min-width: 320px;
   overflow: auto;
   width: 80%; }
-  .modal .contract-detail {
-    width: 100%;
-    padding: 0.125rem; }
-  .modal .contract-details-list {
-    max-width: 15rem; }
-  .modal h5 {
-    margin: -.5rem 0 0.5rem;
-    text-align: center; }
-  .modal .contract-details {
-    display: flex; }
-  .modal .contract-receipt {
-    max-width: 25rem; }
-  .modal .contract-chart {
-    flex: 1;
-    min-width: 25rem; }
-
-.profit-loss-label {
-  font-size: large; }
-
-.highcharts-container {
-  width: 100% !important; }
-  .highcharts-container svg {
-    width: 100% !important; }
 
 .info-icon {
   background-color: rgba(42, 48, 82, 0.5);
@@ -461,22 +396,6 @@ input[type=number]::-webkit-outer-spin-button {
   .btn-flat:hover {
     background: rgba(42, 48, 82, 0.1) !important; }
 
-input[type=date]::-webkit-inner-spin-button {
-  display: none;
-  -webkit-appearance: none; }
-
-input[type=time]::-webkit-inner-spin-button {
-  display: none;
-  -webkit-appearance: none; }
-
-input[type=date]::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none; }
-
-input[type=time]::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none; }
-
 div[role=tab] .close-btn {
   background: #2a3052;
   fill: white; }
@@ -504,21 +423,6 @@ nav.sidebar {
 .account-info {
   background: #e98024;
   padding: 0.5rem; }
-
-.contract-detail {
-  display: flex;
-  margin: 0.125rem;
-  border-radius: 2px; }
-  .contract-detail > span {
-    flex: 1; }
-  .contract-detail > *:first-child {
-    opacity: 0.5;
-    text-transform: uppercase;
-    font-weight: bold; }
-
-.contract-details-list {
-  display: flex;
-  flex-wrap: wrap; }
 
 .digit-stats-card {
   width: 100%;
@@ -611,18 +515,37 @@ nav.sidebar {
     opacity: 0;
     transition: 0.3s; }
 
-.vertical .trade-params, .vertical .contract-receipt-container {
-  overflow: auto;
-  width: 10rem;
-  margin-right: 0.5rem; }
+input::-webkit-calendar-picker-indicator {
+  display: none; }
 
-.horizontal .trade-params {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
+input::-webkit-clear-button {
+  -webkit-appearance: none;
+  margin: 0; }
 
-.btn-flat:hover, .start-time-selector label:hover, .picker-label:hover {
-  box-shadow: inset 0 0 0 1px rgba(42, 48, 82, 0.5); }
+input[type=number] {
+  -moz-appearance: textfield; }
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none; }
+
+input[type=date]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none; }
+
+input[type=time]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none; }
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none; }
+
+input[type=time]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none; }
 
 .mobile-page {
   height: 100%;
@@ -735,6 +658,43 @@ nav.sidebar {
 .portfolio-panel {
   width: 100%; }
 
+.contract-detail {
+  display: flex;
+  margin: 0.125rem;
+  border-radius: 2px; }
+  .contract-detail > span {
+    flex: 1; }
+  .contract-detail > *:first-child {
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.contract-details-list {
+  display: flex;
+  flex-wrap: wrap; }
+
+.profit-loss-label {
+  font-size: large;
+  text-align: center;
+  margin: .5rem 0; }
+
+.modal .contract-detail {
+  width: 100%;
+  padding: 0.125rem; }
+
+.modal .contract-details-list {
+  max-width: 15rem; }
+
+.modal .contract-details {
+  display: flex; }
+
+.modal .contract-receipt {
+  max-width: 25rem; }
+
+.modal .contract-chart {
+  flex: 1;
+  min-width: 25rem; }
+
 .statement-card {
   display: flex;
   flex-direction: column;
@@ -747,16 +707,6 @@ nav.sidebar {
 
 .statement-row {
   cursor: pointer; }
-
-.vertical .trade-params, .vertical .contract-receipt-container {
-  overflow: auto;
-  width: 10rem;
-  margin-right: 0.5rem; }
-
-.horizontal .trade-params {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
 
 .btn-flat:hover, .start-time-selector label:hover, .picker-label:hover {
   box-shadow: inset 0 0 0 1px rgba(42, 48, 82, 0.5); }
@@ -779,6 +729,11 @@ nav.sidebar {
 .vertical .trade-params {
   flex-direction: row-reverse; }
 
+.vertical .trade-params, .vertical .contract-receipt-container {
+  overflow: auto;
+  width: 11rem;
+  margin-right: 0.5rem; }
+
 .vertical .trade-panel {
   flex-direction: row-reverse; }
 
@@ -797,17 +752,19 @@ nav.sidebar {
 .horizontal .errorfield {
   margin-right: 0.5rem; }
 
-.horizontal .trade-params > * {
-  flex: 1; }
-
-.horizontal .trade-params > div {
-  margin-right: 0.5rem;
-  min-width: 11rem; }
-
-.horizontal .trade-params .barrier-picker {
+.horizontal .trade-params {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
+  .horizontal .trade-params > * {
+    flex: 1; }
+  .horizontal .trade-params > div {
+    margin-right: 0.5rem;
+    min-width: 11rem; }
+  .horizontal .trade-params .barrier-picker {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
 
 .horizontal .trade-panel {
   flex-direction: column-reverse; }
@@ -875,6 +832,11 @@ nav.sidebar {
 .trade-chart {
   width: 100%; }
 
+.highcharts-container {
+  width: 100% !important; }
+  .highcharts-container svg {
+    width: 100% !important; }
+
 .payout-value {
   font-size: 1.2em; }
 
@@ -890,14 +852,16 @@ nav.sidebar {
   .duration-input > * {
     flex: 1; }
 
+.start-time-selector + .forward-starting-input {
+  margin-top: .5rem; }
+
 .forward-starting-input {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
   .forward-starting-input > input {
-    margin-top: 0.5rem;
     max-width: 50%;
-    flex: 1 0 auto; }
+    flex: 1; }
 
 .barrier-input {
   display: flex;
@@ -942,7 +906,7 @@ nav.sidebar {
 .forward-starting-picker > * {
   flex: 1; }
 
-.trade-params label {
+.param-row > label {
   text-transform: uppercase;
   line-height: 1.5; }
 
