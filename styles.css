@@ -576,8 +576,6 @@ input[type=time]::-webkit-calendar-picker-indicator {
   width: 100%; }
   .mobile-content .setting-container > .asset-index-card {
     margin: 0 0.25em; }
-  .mobile-content > .video-list {
-    margin: 0 0.25em; }
   .mobile-content > .trading-times-card {
     margin: 0 0.25em; }
   .mobile-content .trade-panel {
@@ -665,7 +663,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
     margin-left: .5rem; } }
 
 .news-list-card, .article {
-  margin: .5em;
+  padding: .5em;
   font-size: 1rem; }
 
 .news-list-card {
@@ -676,10 +674,16 @@ input[type=time]::-webkit-calendar-picker-indicator {
   margin: 0 0 .5rem 0; }
 
 .article-preview {
+  display: inline-block;
   text-decoration: none;
   color: #404448; }
   .article-preview p {
-    margin-bottom: 2rem; }
+    margin: 0; }
+  .article-preview:hover {
+    box-shadow: 0 0 0 0.25rem rgba(42, 48, 82, 0.25); }
+
+.article-preview + .article-preview {
+  margin-top: 1rem; }
 
 .portfolio-row {
   cursor: pointer; }
@@ -971,21 +975,22 @@ input[type=time]::-webkit-calendar-picker-indicator {
   width: 100%; }
 
 .video-list {
-  overflow: auto;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-content: flex-start; }
+  width: 100%;
+  padding: 0.5rem; }
 
 .video-thumbnail {
-  flex: 1;
-  margin: 0.5rem;
-  min-width: 10rem;
+  display: block;
+  width: 100%;
   text-decoration: none; }
   .video-thumbnail img {
     width: 100%; }
   .video-thumbnail h5 {
     text-decoration: none;
     text-align: center;
-    margin-top: 1rem; }
+    margin-top: .5rem; }
+  .video-thumbnail:hover {
+    box-shadow: 0 0 0 0.25rem rgba(42, 48, 82, 0.25); }
+
+.video-thumbnail + .video-thumbnail {
+  margin-top: 1rem; }
