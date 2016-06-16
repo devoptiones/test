@@ -578,9 +578,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   overflow: auto;
   width: 100%; }
   .mobile-content .setting-container > .asset-index-card {
-    margin: 0 0.25em; }
-  .mobile-content > .trading-times-card {
-    margin: 0 0.25em; }
+    padding: 0 0.25em; }
   .mobile-content .trade-panel {
     flex-direction: column; }
   .mobile-content .modal {
@@ -973,6 +971,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .trading-times-filter {
   display: flex;
   margin-bottom: -.5rem; }
+  .trading-times-filter > * {
+    width: 50%; }
 
 .trading-times-date-picker > input {
   width: 100%; }
