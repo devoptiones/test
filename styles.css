@@ -354,6 +354,9 @@ th.right {
   overflow: auto;
   width: 80%; }
 
+.inverse .modal {
+  background: #1d1d24; }
+
 .info-icon {
   background-color: rgba(42, 48, 82, 0.5);
   width: 1rem;
