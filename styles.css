@@ -554,9 +554,6 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .inverse input {
   border: none !important; }
 
-.highcharts-background {
-  fill: transparent; }
-
 * {
   -webkit-tap-highlight-color: transparent; }
 
@@ -662,9 +659,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex: 1; }
 
 @media (orientation: landscape) {
-  .trade-panel {
+  .mobile-content .trade-panel {
     flex-direction: row !important; }
-  .trade-params {
+  .mobile-content .trade-params {
     margin-left: .5rem; } }
 
 .news-list-card, .article {
@@ -802,7 +799,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
     flex-wrap: wrap; }
 
 .horizontal .trade-panel {
-  flex-direction: column-reverse; }
+  flex-direction: column; }
 
 .horizontal .contract-detail {
   flex-direction: column;
