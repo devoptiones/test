@@ -151,10 +151,6 @@ input[type=range] {
   font-size: 1.25em;
   padding: 0.5rem; }
 
-.sell-at-market-btn {
-  font-size: 1.25em;
-  padding: 0.5rem; }
-
 fieldset {
   margin-bottom: 0.5rem; }
 
@@ -736,11 +732,16 @@ input[type=time]::-webkit-calendar-picker-indicator {
   display: flex; }
 
 .modal .contract-receipt {
-  max-width: 25rem; }
+  max-width: 25rem;
+  padding-left: 0.5rem; }
 
 .modal .contract-chart {
   flex: 1;
   min-width: 25rem; }
+
+.sell-at-market-btn {
+  font-size: 1.25em;
+  width: 100%; }
 
 .settings-card {
   width: 100%; }
@@ -784,7 +785,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .vertical .contract-receipt-container {
   overflow: auto;
   width: 11rem;
-  margin-right: 0.5rem; }
+  padding-right: 0.5rem; }
 
 .vertical .trade-panel {
   flex-direction: row-reverse; }
