@@ -20,10 +20,12 @@
         var accounts = [];
 
         for (var i = 1; i < params.length; i += 3) {
+            if (~params[i].indexOf('VRTC')) {
                 accounts.push({
                     account: params[i],
                     token: params[i + 1]
                 });
+            }
         }
 
         return accounts;
