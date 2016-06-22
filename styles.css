@@ -208,10 +208,6 @@ fieldset {
 .button-list {
   display: inline; }
 
-.name-val-pairs {
-  display: flex;
-  flex-direction: column; }
-
 .name-val-pair {
   display: flex; }
   .name-val-pair * {
@@ -584,7 +580,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex-direction: column;
   overflow: auto;
   width: 100%; }
-  .mobile-content .setting-container > .asset-index-card {
+  .mobile-content .settings-container > .asset-index-card {
     padding: 0 0.25em; }
   .mobile-content .trade-panel {
     flex-direction: column; }
@@ -726,7 +722,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   padding: 0.125rem; }
 
 .modal .contract-details-list {
-  max-width: 15rem; }
+  max-width: 16rem; }
 
 .modal .contract-details {
   display: flex; }
@@ -745,9 +741,11 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .settings-card {
   width: 100%; }
+  .settings-card .notice-msg {
+    margin-top: 0.5rem; }
 
-.setting-container {
-  margin: 0 0.5rem; }
+.settings-container {
+  padding: 0 0.5rem; }
 
 .statement-card {
   display: flex;
@@ -763,10 +761,11 @@ input[type=time]::-webkit-calendar-picker-indicator {
   cursor: pointer; }
 
 .vertical > [role=tab] {
-  padding: 0.25rem 0.25rem 0.25rem 0.1rem;
-  margin-bottom: 0.25rem; }
+  padding: 0.1rem;
+  margin-bottom: 0.5rem; }
   .vertical > [role=tab] > span {
-    margin-top: 0.25rem; }
+    line-height: 1;
+    margin-top: 0.5rem; }
   .vertical > [role=tab] > img {
     margin: 0 auto; }
 
