@@ -308,7 +308,7 @@ div[role=tabpanel] {
 td.left {
   text-align: left; }
 
-td.right {
+td.right, td.numeric {
   text-align: right; }
 
 td.row-id {
@@ -743,9 +743,29 @@ input[type=time]::-webkit-calendar-picker-indicator {
   width: 100%; }
   .settings-card .notice-msg {
     margin-top: 0.5rem; }
+  .settings-card button {
+    width: 100%; }
 
-.settings-container {
+.settings-address,
+.settings-self-exclusion,
+.settings-cashier-lock,
+.settings-limits {
   padding: 0 0.5rem; }
+  .settings-address label,
+  .settings-self-exclusion label,
+  .settings-cashier-lock label,
+  .settings-limits label {
+    display: inline-block;
+    width: 50%; }
+  .settings-address input,
+  .settings-address select,
+  .settings-self-exclusion input,
+  .settings-self-exclusion select,
+  .settings-cashier-lock input,
+  .settings-cashier-lock select,
+  .settings-limits input,
+  .settings-limits select {
+    width: 50%; }
 
 .statement-card {
   display: flex;
