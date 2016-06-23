@@ -580,8 +580,6 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex-direction: column;
   overflow: auto;
   width: 100%; }
-  .mobile-content .settings-container > .asset-index-card {
-    padding: 0 0.25em; }
   .mobile-content .trade-panel {
     flex-direction: column; }
   .mobile-content .modal {
@@ -746,26 +744,26 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .settings-card button {
     width: 100%; }
 
-.settings-address,
-.settings-self-exclusion,
+.settings-personal-page,
+.settings-change-password,
 .settings-cashier-lock,
+.settings-self-exclusion,
 .settings-limits {
-  padding: 0 0.5rem; }
-  .settings-address label,
-  .settings-self-exclusion label,
-  .settings-cashier-lock label,
-  .settings-limits label {
-    display: inline-block;
-    width: 50%; }
-  .settings-address input,
-  .settings-address select,
-  .settings-self-exclusion input,
-  .settings-self-exclusion select,
-  .settings-cashier-lock input,
-  .settings-cashier-lock select,
-  .settings-limits input,
-  .settings-limits select {
-    width: 50%; }
+  padding: 0 0.5rem 0.5rem; }
+
+.settings-address label,
+.settings-self-exclusion label {
+  display: inline-block;
+  width: 50%; }
+
+.settings-address input,
+.settings-address select,
+.settings-self-exclusion input,
+.settings-self-exclusion select {
+  width: 50%; }
+
+.settings-change-password input {
+  width: 100%; }
 
 .statement-card {
   display: flex;
