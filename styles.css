@@ -751,18 +751,23 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .settings-limits {
   padding: 0 0.5rem 0.5rem; }
 
-.settings-address label,
-.settings-self-exclusion label {
+.settings-address label {
   display: inline-block;
   width: 50%; }
 
 .settings-address input,
-.settings-address select,
-.settings-self-exclusion input,
-.settings-self-exclusion select {
+.settings-address select {
   width: 50%; }
 
-.settings-change-password input {
+.settings-self-exclusion label {
+  display: inline-block;
+  width: 60%; }
+
+.settings-self-exclusion input {
+  width: 40%; }
+
+.settings-change-password input,
+.settings-cashier-lock input {
   width: 100%; }
 
 .statement-card {
