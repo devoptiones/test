@@ -1,10 +1,8 @@
 .asset-details {
-  width: 100%; }
+  width: 100%;
+  padding: 0.5rem; }
   .asset-details h4 {
-    margin-top: 0.5rem;
-    margin-left: 0.5rem; }
-  .asset-details h5 {
-    margin-left: 0.5rem; }
+    margin-top: 0; }
 
 .asset-index-card {
   width: 100%;
@@ -305,20 +303,23 @@ div[role=tabpanel] {
   align-content: center;
   margin: 0.5rem; }
 
-td.left {
+td.centered,
+th.centered {
+  text-align: center; }
+
+td.left, td.textual,
+th.left,
+th.textual {
   text-align: left; }
 
-td.right, td.numeric {
+td.right, td.numeric,
+th.right,
+th.numeric {
   text-align: right; }
 
-td.row-id {
+td.row-id,
+th.row-id {
   font-weight: bold; }
-
-th.left {
-  text-align: left; }
-
-th.right {
-  text-align: right; }
 
 .open-notice,
 .closed-notice {
