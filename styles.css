@@ -303,23 +303,24 @@ div[role=tabpanel] {
   align-content: center;
   margin: 0.5rem; }
 
-td.centered,
-th.centered {
-  text-align: center; }
-
-td.left, td.textual,
-th.left,
-th.textual {
-  text-align: left; }
-
-td.right, td.numeric,
-th.right,
-th.numeric {
-  text-align: right; }
-
-td.row-id,
-th.row-id {
-  font-weight: bold; }
+td,
+th {
+  padding: 0.2rem 0.4rem; }
+  td.centered,
+  th.centered {
+    text-align: center; }
+  td.left, td.textual,
+  th.left,
+  th.textual {
+    text-align: left; }
+  td.right, td.numeric, td.date,
+  th.right,
+  th.numeric,
+  th.date {
+    text-align: right; }
+  td.row-id,
+  th.row-id {
+    font-weight: bold; }
 
 .open-notice,
 .closed-notice {
