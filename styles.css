@@ -785,6 +785,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .statement-row {
   cursor: pointer; }
 
+.vertical .errorfield {
+  margin-bottom: 0.5rem; }
+
 .vertical > [role=tab] {
   padding: 0.1rem;
   margin-bottom: 0.5rem; }
@@ -827,17 +830,14 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex-direction: row-reverse; }
 
 .horizontal .errorfield {
-  margin-right: 0.5rem; }
+  margin: 0.5rem 0; }
 
 .horizontal .trade-params {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap; }
   .horizontal .trade-params > * {
     flex: 1; }
-  .horizontal .trade-params > div {
-    margin-right: 0.5rem;
-    min-width: 11rem; }
   .horizontal .trade-params .barrier-picker {
     display: flex;
     flex-direction: row;
