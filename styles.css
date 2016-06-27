@@ -793,7 +793,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
     margin: 0.5rem; }
 
 .statement-list {
-  overflow: auto; }
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
 
 .statement-row {
   cursor: pointer; }
