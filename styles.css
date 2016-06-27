@@ -6,7 +6,8 @@
 
 .asset-index-card {
   width: 100%;
-  overflow: auto; }
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
 
 .asset-picker-filter {
   min-height: 5rem; }
@@ -262,24 +263,6 @@ select {
 .theme-picker {
   width: 100%; }
 
-#new-trade-btn {
-  margin: 0.5rem; }
-
-#deposit-btn {
-  margin: 0.5rem; }
-
-#logo {
-  margin: 0.5rem; }
-  #logo img {
-    height: 2rem; }
-    #logo img:nth-child(2) {
-      margin-left: 0.25rem;
-      height: 1.75rem; }
-
-.balance {
-  font-size: 1.5rem;
-  line-height: 2 !important; }
-
 .form-label {
   font-weight: 500;
   margin-bottom: 5px; }
@@ -456,8 +439,7 @@ nav.sidebar {
   color: white;
   justify-content: space-between; }
   .header #hamburger-btn {
-    padding: 1rem;
-    margin-left: 1rem; }
+    line-height: 2; }
     .header #hamburger-btn > .sidebar {
       top: -300px !important;
       left: inherit;
@@ -497,6 +479,18 @@ nav.sidebar {
     visibility: hidden;
     opacity: 0;
     transition: 0.3s; }
+
+#logo {
+  margin: 0.25rem; }
+  #logo img {
+    height: 2rem; }
+    #logo img:nth-child(2) {
+      margin-left: 0.25rem;
+      height: 1.75rem; }
+
+.balance {
+  font-size: 1.25rem;
+  line-height: 2 !important; }
 
 #footer {
   display: flex;
@@ -681,7 +675,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
   font-size: 1rem; }
 
 .news-list-card {
-  overflow: auto; }
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
 
 .article h1,
 .article-preview h2 {
@@ -1022,7 +1017,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .trading-times-card {
   width: 100%;
-  overflow: auto; }
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
 
 .trading-times-filter {
   display: flex;
