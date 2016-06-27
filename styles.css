@@ -19,7 +19,8 @@
   min-width: 12rem; }
 
 .asset-list {
-  overflow: auto; }
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
   .asset-list tr {
     cursor: pointer; }
   .asset-list tbody tr.selected {
@@ -35,7 +36,9 @@
 
 body {
   height: 100%;
-  overflow: hidden; }
+  width: 100%;
+  overflow: hidden;
+  position: fixed; }
 
 .screen {
   font-size: 12px;
