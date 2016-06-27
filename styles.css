@@ -700,8 +700,10 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .portfolio-row {
   cursor: pointer; }
 
-.portfolio-panel {
+.portfolio-card {
   width: 100%; }
+  .portfolio-card .notice-msg {
+    margin: 0.5rem; }
 
 .contract-detail {
   display: flex;
@@ -784,6 +786,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
   width: 100%; }
   .statement-card [role=tablist] {
     margin-bottom: 0; }
+  .statement-card .notice-msg {
+    margin: 0.5rem; }
 
 .statement-list {
   overflow: auto; }
