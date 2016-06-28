@@ -66,7 +66,7 @@
 
     var redirectIndex = window.location.href.indexOf('?');
     if (~redirectIndex) {
-        history.replaceState({} , 'Binary', window.location.href.substr(0, redirectIndex - 1));
+        location.replace(window.location.href.substr(0, redirectIndex - 1));
     }
 
     window.BinaryBoot.connection = new WebSocket(apiUrl + '?app_id=1001&l=' + lang);
