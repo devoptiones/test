@@ -838,22 +838,21 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .vertical .digit-stats-col {
   flex-direction: row-reverse; }
 
+.horizontal .trade-panel {
+  flex-direction: column; }
+
 .horizontal .errorfield {
   margin: 0.5rem 0; }
 
 .horizontal .trade-params {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; }
+  flex-direction: column; }
   .horizontal .trade-params > * {
     flex: 1; }
   .horizontal .trade-params .barrier-picker {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; }
-
-.horizontal .trade-panel {
-  flex-direction: column; }
 
 .horizontal .contract-detail {
   flex-direction: column;
