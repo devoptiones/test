@@ -608,6 +608,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .mobile-content .sell-at-market-btn,
   .mobile-content .buy-again-btn {
     width: 100%; }
+  .mobile-content .sell-at-market-btn + .buy-again-btn {
+    margin-top: 0.5rem; }
   .mobile-content .forward-starting-picker {
     display: flex;
     flex-direction: row; }
