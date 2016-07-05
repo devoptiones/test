@@ -269,10 +269,6 @@ select {
 div[role=tabpanel] {
   background: #cc0033; }
 
-#footer {
-  display: flex;
-  height: 3rem; }
-
 .centerer {
   display: flex;
   justify-content: center;
@@ -494,11 +490,11 @@ nav.sidebar {
 
 #footer {
   display: flex;
-  height: 2.5rem; }
-
-.full-screen-button,
-.language-picker {
-  margin: 0.25rem; }
+  height: 2.5rem;
+  background: #2a3052; }
+  #footer .full-screen-button,
+  #footer .language-picker {
+    margin: 0.25rem; }
 
 #clock {
   margin: 0.5rem;
