@@ -246,13 +246,11 @@ select {
   margin: auto;
   flex-direction: column;
   align-content: space-between; }
-  .startup-content input {
-    width: 100%; }
-  .startup-content .button {
-    width: 100%; }
+  .startup-content,
+  .startup-content form,
+  .startup-content form > *,
+  .startup-content input,
   .startup-content select {
-    width: 100%; }
-  .startup-content .btn-secondary {
     width: 100%; }
 
 #theme-wrapper {
