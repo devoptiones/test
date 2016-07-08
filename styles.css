@@ -483,26 +483,30 @@ nav.sidebar {
   .startup-content select {
     width: 100%; }
 
-.wide-form {
+.upgrade-card {
   display: flex;
   flex-direction: column;
   flex: 1;
   margin: auto;
+  padding: 0.5rem;
+  width: 100%;
   max-width: 420px; }
-  .wide-form h3 {
+  .upgrade-card h3 {
     margin-bottom: 1em; }
-  .wide-form p {
+  .upgrade-card .errorfield {
+    margin-bottom: 0.5rem; }
+  .upgrade-card p {
     display: flex;
     flex-direction: row;
     margin: 0; }
-    .wide-form p > * {
+    .upgrade-card p > * {
       flex: 1;
       margin: 0 0.5em 0.5em 0; }
-    .wide-form p > label {
+    .upgrade-card p > label {
       margin: 0; }
-    .wide-form p > button {
+    .upgrade-card p > button {
       flex: 1; }
-    .wide-form p > :last-child {
+    .upgrade-card p > :last-child {
       margin-right: 0; }
 
 #footer {
