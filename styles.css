@@ -67,7 +67,7 @@ table {
   margin-bottom: 0; }
 
 .logo-text {
-  padding: 1rem; }
+  padding: 0.5rem; }
 
 .close-btn {
   cursor: pointer;
@@ -367,7 +367,8 @@ nav.sidebar {
   padding: 0 0.5rem 0 0; }
 
 .full-logo {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 1rem; }
 
 .digit-stats-card {
   width: 100%;
@@ -475,7 +476,7 @@ nav.sidebar {
 .startup-content {
   display: flex;
   flex: 1;
-  max-width: 360px;
+  max-width: 300px;
   margin: auto;
   flex-direction: column;
   align-content: space-between;
@@ -506,6 +507,10 @@ nav.sidebar {
     margin-bottom: 0.5rem; }
   .upgrade-card button {
     width: 100%; }
+  .upgrade-card .names-row input {
+    min-width: 8rem; }
+  .upgrade-card .names-row select {
+    flex: inherit; }
   .upgrade-card .input-row {
     display: flex;
     flex-direction: row;
