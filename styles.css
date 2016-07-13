@@ -128,8 +128,8 @@ input[type=range] {
 .sidebar-btn {
   padding: 0; }
   .sidebar-btn > img {
-    width: 3.5rem;
-    padding: 1rem; }
+    width: 3rem;
+    padding: 0.75rem; }
 
 .toolbar-btn {
   line-height: 3.5;
@@ -355,16 +355,11 @@ nav.sidebar {
 
 .account-info {
   background: #e98024;
-  padding: 0.5rem; }
-
-.watchlist-table tr:not(:hover) .close-btn {
-  visibility: hidden; }
+  padding: 0.5rem;
+  line-height: 1.5; }
 
 .close-btn svg {
   vertical-align: middle; }
-
-.watchlist-remove-cell {
-  padding: 0 0.5rem 0 0; }
 
 .full-logo {
   text-align: center;
@@ -428,6 +423,9 @@ nav.sidebar {
   .header #hamburger-opener:checked + #hamburger-btn > .sidebar {
     top: 3.5rem !important;
     left: inherit; }
+  .header .balance {
+    font-size: 1.25rem;
+    line-height: 2 !important; }
 
 #hamburger-opener {
   display: none; }
@@ -468,10 +466,6 @@ nav.sidebar {
     #logo img:nth-child(2) {
       margin-left: 0.25rem;
       height: 1.75rem; }
-
-.balance {
-  font-size: 1.25rem;
-  line-height: 2 !important; }
 
 .startup-content {
   display: flex;
@@ -1058,6 +1052,27 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .trading-times-date-picker > input {
   width: 100%; }
+
+.watchlist-table tr:not(:hover) .close-btn {
+  visibility: hidden; }
+
+.watchlist-remove-cell {
+  padding: 0 0.5rem 0 0; }
+
+.watchlist-card {
+  width: 100%;
+  padding: 0.25rem; }
+
+.watchlist-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.watchlist-item:hover {
+  box-shadow: 0 0 0 0.25rem rgba(42, 48, 82, 0.25); }
+
+.watchlist-item + .watchlist-item {
+  margin-bottom: 1rem; }
 
 .video-list {
   margin: 0;
