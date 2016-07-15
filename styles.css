@@ -1182,7 +1182,8 @@ body {
 
 .panels {
   flex: 1;
-  display: flex; }
+  display: flex;
+  max-height: calc(100% - 5rem); }
 
 .workspace-panel {
   overflow: auto;
