@@ -2189,7 +2189,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .watchlist-card {
   width: 100%;
-  padding: 0.25rem; }
+  padding: 0.25rem;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
 
 .watchlist-details {
   display: flex;
