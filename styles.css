@@ -70,9 +70,9 @@ table {
   user-select: none; }
 
 *,
-*:after,
-*:before {
-  transition: opacity .2s, color .2s, background .2s; }
+*::after,
+*::before {
+  transition: opacity 0.2s, color 0.2s, background 0.2s, transform 0.2s; }
 
 @keyframes spinning {
   from {
@@ -94,7 +94,7 @@ table {
   0% {
     opacity: 1; }
   50% {
-    opacity: .5; }
+    opacity: 0.5; }
   100% {
     opacity: 1; } }
 
@@ -102,7 +102,7 @@ table {
   0% {
     opacity: 1; }
   50% {
-    opacity: .5; }
+    opacity: 0.5; }
   100% {
     opacity: 1; } }
 
@@ -112,19 +112,19 @@ table {
 
 .full-screen-overlay {
   opacity: 1;
-  transition: opacity .2s, height 0; }
+  transition: opacity 0.2s, height 0; }
 
 .full-screen-overlay.hidden {
   opacity: 0;
-  transition: opacity .2s, height 0 .2s;
+  transition: opacity 0.2s, height 0 0.2s;
   height: 0; }
 
 .full-screen-overlay > * {
-  transition: transform .2s, height 0;
+  transition: transform 0.2s, height 0;
   transform: scale(1); }
 
 .full-screen-overlay.hidden > * {
-  transition: transform .2s, height 0 .2s;
+  transition: transform 0.2s, height 0 0.2s;
   transform: scale(0.9); }
 
 .progress {
@@ -132,6 +132,36 @@ table {
   background-size: contain;
   width: 2rem;
   height: 2rem; }
+
+.popup-enter {
+  opacity: 0.01; }
+  .popup-enter > .modal {
+    transform: scale(0.9); }
+  .popup-enter.mobile-page {
+    transform: scale(0.9) translate(0, 2rem); }
+
+.popup-enter.popup-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in-out; }
+  .popup-enter.popup-enter-active > .modal {
+    transform: scale(1); }
+  .popup-enter.popup-enter-active.mobile-page {
+    transform: scale(1) translate(0, 0); }
+
+.popup-leave {
+  opacity: 1; }
+  .popup-leave > .modal {
+    transform: scale(1); }
+  .popup-leave.mobile-page {
+    transform: scale(1) translate(0, 0); }
+
+.popup-leave.popup-leave-active {
+  opacity: 0.01;
+  transition: opacity 200ms ease-in-out; }
+  .popup-leave.popup-leave-active > .modal {
+    transform: scale(0.75); }
+  .popup-leave.popup-leave-active.mobile-page {
+    transform: scale(0.75) translate(0, 4rem); }
 
 button,
 input[type=submit],
@@ -514,7 +544,7 @@ header {
 .modal {
   background: white;
   padding: 1rem;
-  box-shadow: 0px 0px 1rem 0px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5); }
 
 .modal .close-btn {
   position: relative;
@@ -1221,19 +1251,6 @@ header {
 .full-screen-overlay {
   z-index: 9999; }
 
-.drop-down {
-  display: flex;
-  max-height: 90vh;
-  max-width: 90vw;
-  overflow: auto;
-  background: white;
-  position: absolute;
-  z-index: 10000;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
-  border-radius: 2px; }
-  .drop-down + .full-screen-overlay {
-    background: transparent; }
-
 .market-submarket-picker {
   width: 100%; }
 
@@ -1535,6 +1552,19 @@ nav.sidebar {
   width: 100%;
   margin-bottom: 0.5rem; }
 
+.drop-down {
+  display: flex;
+  max-height: 90vh;
+  max-width: 90vw;
+  overflow: auto;
+  background: white;
+  position: absolute;
+  z-index: 10000;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+  border-radius: 2px; }
+  .drop-down + .full-screen-overlay {
+    background: transparent; }
+
 .header {
   display: flex;
   background: #2a3052;
@@ -1731,7 +1761,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
   position: absolute;
   top: 0;
   left: 0;
-  background: white; }
+  width: 100%;
+  background: white;
+  z-index: 100; }
 
 .mobile-content {
   min-width: 320px;
