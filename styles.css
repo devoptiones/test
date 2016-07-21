@@ -138,7 +138,7 @@ table {
   .popup-enter > .modal {
     transform: scale(0.9); }
   .popup-enter > .mobile-content {
-    transform: scale(0.9) translateY(2rem); }
+    transform: scale(0.9) translateY(4rem); }
 
 .popup-enter.popup-enter-active {
   opacity: 1;
@@ -161,7 +161,7 @@ table {
   .popup-leave.popup-leave-active > .modal {
     transform: scale(0.75); }
   .popup-leave.popup-leave-active > .mobile-content {
-    transform: scale(0.75) translateY(4rem); }
+    transform: scale(0.75) translateY(8rem); }
 
 button,
 input[type=submit],
@@ -1551,6 +1551,9 @@ nav.sidebar {
 .digit-stats-filter select {
   width: 100%;
   margin-bottom: 0.5rem; }
+
+.drop-down-wrapper {
+  position: absolute; }
 
 .drop-down {
   display: flex;
