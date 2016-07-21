@@ -135,33 +135,39 @@ table {
 
 .popup-enter {
   opacity: 0.01; }
-  .popup-enter > .modal {
-    transform: scale(0.9); }
-  .popup-enter > .mobile-content {
+  .popup-enter > .modal,
+  .popup-enter > .mobile-content,
+  .popup-enter > .article {
     transform: scale(0.9) translateY(4rem); }
+  .popup-enter > .drop-down {
+    transform: scale(0.75) translateY(-4rem); }
 
 .popup-enter.popup-enter-active {
   opacity: 1;
   transition: opacity 200ms ease-in-out; }
-  .popup-enter.popup-enter-active > .modal {
-    transform: scale(1); }
-  .popup-enter.popup-enter-active > .mobile-content {
+  .popup-enter.popup-enter-active > .modal,
+  .popup-enter.popup-enter-active > .mobile-content,
+  .popup-enter.popup-enter-active > .drop-down,
+  .popup-enter.popup-enter-active > .article {
     transform: scale(1) translateY(0); }
 
 .popup-leave {
   opacity: 1; }
-  .popup-leave > .modal {
-    transform: scale(1); }
-  .popup-leave > .mobile-content {
+  .popup-leave > .modal,
+  .popup-leave > .mobile-content,
+  .popup-leave > .drop-down,
+  .popup-leave > .article {
     transform: scale(1) translateY(0); }
 
 .popup-leave.popup-leave-active {
   opacity: 0.01;
   transition: opacity 200ms ease-in-out; }
-  .popup-leave.popup-leave-active > .modal {
-    transform: scale(0.75); }
-  .popup-leave.popup-leave-active > .mobile-content {
+  .popup-leave.popup-leave-active > .modal,
+  .popup-leave.popup-leave-active > .mobile-content,
+  .popup-leave.popup-leave-active > .article {
     transform: scale(0.75) translateY(8rem); }
+  .popup-leave.popup-leave-active > .drop-down {
+    transform: scale(0.75) translateY(-6rem); }
 
 button,
 input[type=submit],
@@ -1560,13 +1566,16 @@ nav.sidebar {
   max-height: 90vh;
   max-width: 90vw;
   overflow: auto;
-  background: white;
   position: absolute;
   z-index: 10000;
+  background: white;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
   border-radius: 2px; }
   .drop-down + .full-screen-overlay {
     background: transparent; }
+
+.inverse .drop-down {
+  background-color: #1d1d24 !important; }
 
 .header {
   display: flex;
@@ -1842,6 +1851,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   width: 100%; }
 
 .mobile-back-btn {
+  cursor: pointer;
   text-align: left !important;
   font-weight: normal;
   color: white !important;
