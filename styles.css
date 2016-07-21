@@ -1572,7 +1572,8 @@ nav.sidebar {
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
   border-radius: 2px; }
   .drop-down + .full-screen-overlay {
-    background: transparent; }
+    background: transparent;
+    -webkit-backdrop-filter: none; }
 
 .inverse .drop-down {
   background-color: #1d1d24 !important; }
