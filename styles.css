@@ -69,6 +69,15 @@ table {
   -ms-user-select: none;
   user-select: none; }
 
+.app ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: .5em; }
+
+.app ::-webkit-scrollbar-thumb {
+  border-radius: .3em;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
+
 *,
 *::after,
 *::before {
@@ -1958,7 +1967,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .vertical .contract-receipt-container {
   overflow: auto;
   width: 11rem;
-  padding-right: 0.5rem; }
+  padding-right: 0.25rem;
+  margin-right: 0.25rem; }
 
 .vertical .trade-panel {
   flex-direction: row-reverse; }
