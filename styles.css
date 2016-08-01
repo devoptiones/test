@@ -180,14 +180,13 @@ table {
     transform: scale(0.75) translateY(-6rem); }
 
 .zoom-leave {
-  transition: transform 1s;
   opacity: 1;
   transform: scale(1); }
 
 .zoom-leave.zoom-leave-active {
-  transition: opacity 500ms, transform 500ms;
-  transform: scale(2);
-  opacity: 0; }
+  opacity: 0;
+  transform: scale(4) translateY(4rem);
+  transition: opacity 500ms cubic-bezier(0.6, 0.04, 0.98, 0.335), transform 500ms cubic-bezier(0.6, 0.04, 0.98, 0.335); }
 
 button,
 input[type=submit],
@@ -1143,7 +1142,8 @@ body {
 .root {
   width: 100%;
   height: 100%;
-  display: flex; }
+  display: flex;
+  background-color: white; }
 
 .disabled {
   opacity: 0.2; }
@@ -2173,7 +2173,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .watchlist-card {
   width: 100%;
-  height: 100%;
+  height: auto;
   padding: 0.25rem;
   overflow: auto;
   -webkit-overflow-scrolling: touch; }
