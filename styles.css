@@ -1458,6 +1458,8 @@ nav.sidebar {
   .empty-slate img {
     width: 3rem;
     margin-bottom: 0.5rem; }
+  .empty-slate p {
+    text-align: center; }
 
 .digit-stats-card {
   width: 100%;
