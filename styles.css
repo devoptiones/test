@@ -1980,6 +1980,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .vertical .sell-at-market-btn,
 .vertical .buy-again-btn {
+  margin-top: 0.5rem;
   width: 100%; }
 
 .vertical .trade-params {
@@ -2038,7 +2039,6 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .buy-btn,
 .buy-again-btn {
   font-size: 1.25em;
-  padding: 0.5rem;
   width: 100%; }
 
 .numeric-input {
