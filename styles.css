@@ -561,7 +561,8 @@ header {
     transform: scaleY(2); } }
 
 .sidebar-btn {
-  padding: 0; }
+  padding: 0;
+  text-decoration: none; }
   .sidebar-btn > img {
     width: 3rem;
     padding: 0.75rem; }
