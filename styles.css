@@ -1101,10 +1101,9 @@ tbody > tr:hover {
   background-color: #e98024; }
 
 .asset-details {
-  width: 100%;
-  padding: 0.5rem; }
-  .asset-details h4 {
-    margin-top: 0; }
+  width: 100%; }
+  .asset-details h5 {
+    margin: 0.75rem 0.5rem 0.25rem; }
 
 .asset-index-card {
   width: 100%;
@@ -1425,8 +1424,10 @@ nav.sidebar {
 .sidebar span {
   color: white; }
 
-#right-tab-list > div[role=tab][aria-selected=true] {
-  box-shadow: inset -2px 0 0 0 #e98024; }
+#right-tab-list {
+  overflow: auto; }
+  #right-tab-list > div[role=tab][aria-selected=true] {
+    box-shadow: inset -2px 0 0 0 #e98024; }
 
 .close-svg path {
   fill: #2a3052; }
@@ -1590,6 +1591,21 @@ nav.sidebar {
 
 .layout-switch-btn + span + .layout-switch-btn {
   margin-left: 0.5rem; }
+
+.asset-info-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .asset-info-card .asset-info-picker {
+    margin: 0.5rem 0.25rem 0;
+    line-height: 1.5; }
+    .asset-info-card .asset-info-picker h4,
+    .asset-info-card .asset-info-picker span {
+      margin: 0.5rem; }
+    .asset-info-card .asset-info-picker h4 {
+      flex: 1; }
+  .asset-info-card .daily-prices-card {
+    overflow: auto; }
 
 .upgrade-card {
   display: flex;
@@ -2224,8 +2240,12 @@ input[type=time]::-webkit-calendar-picker-indicator {
   display: block;
   width: 100%;
   text-decoration: none; }
-  .video-thumbnail img {
-    width: 100%; }
+  .video-thumbnail .video-img {
+    width: 100%;
+    height: 12rem;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
   .video-thumbnail h5 {
     text-decoration: none;
     text-align: center;
