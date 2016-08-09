@@ -662,29 +662,29 @@ h6 {
 
 h1,
 .font-size-xxl {
-  font-size: 47.40693px; }
+  font-size: 36.62109px; }
 
 h2,
 .font-size-xl {
-  font-size: 35.55529px; }
+  font-size: 29.29688px; }
 
 h3,
 .font-size-l {
-  font-size: 26.66653px; }
+  font-size: 23.4375px; }
 
 h4,
 .font-size-m {
-  font-size: 19.99995px; }
+  font-size: 18.75px; }
 
 h5,
 .font-size-n {
   font-size: 15px; }
 
 .font-size-s {
-  font-size: 11.25003px; }
+  font-size: 12px; }
 
 .font-size-xs {
-  font-size: 8.43754px; }
+  font-size: 9.6px; }
 
 input,
 button,
@@ -1588,12 +1588,15 @@ nav.sidebar {
   display: flex;
   flex-direction: column; }
   .asset-info-card .asset-info-picker {
-    margin: 0.5rem 0.25rem 0;
+    margin: 0.5rem;
     line-height: 1.5; }
-    .asset-info-card .asset-info-picker h4,
     .asset-info-card .asset-info-picker span {
-      margin: 0.5rem; }
+      margin: 0.25rem;
+      line-height: 2; }
     .asset-info-card .asset-info-picker h4 {
+      margin: 0.25rem;
+      font-size: 15px;
+      line-height: 1.5;
       flex: 1; }
   .asset-info-card .daily-prices-card {
     overflow: auto; }
