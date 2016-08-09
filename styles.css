@@ -1220,15 +1220,6 @@ header {
 input[type=range] {
   width: 100%; }
 
-.buy-btn {
-  font-size: 1.25em;
-  padding: 0.5rem;
-  width: 100%; }
-
-.buy-again-btn {
-  font-size: 1.25em;
-  padding: 0.5rem; }
-
 fieldset {
   margin-bottom: 0.5rem; }
 
@@ -1983,11 +1974,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .vertical > [role=tab] > img {
     margin: 0 auto; }
 
-.vertical .sell-at-market-btn {
-  width: 100%; }
-  .vertical .sell-at-market-btn + .buy-again-btn {
-    margin-top: 0.5rem; }
-
+.vertical .sell-at-market-btn,
 .vertical .buy-again-btn {
   width: 100%; }
 
@@ -2041,11 +2028,14 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .horizontal .digit-stats-col {
   flex-direction: column; }
 
-.horizontal .sell-at-market-btn + .buy-again-btn {
-  margin-left: 0.5rem; }
-
 .trade-action {
   text-transform: capitalize; }
+
+.buy-btn,
+.buy-again-btn {
+  font-size: 1.25em;
+  padding: 0.5rem;
+  width: 100%; }
 
 .numeric-input {
   display: flex; }
