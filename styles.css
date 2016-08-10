@@ -1089,18 +1089,6 @@ tbody > tr:hover {
   color: rgba(255, 255, 255, 0.75);
   background: #2a3052; }
 
-.brand-blue {
-  color: #2a3052; }
-
-.brand-blue-bg {
-  background-color: #2a3052; }
-
-.brand-orange {
-  color: #e98024; }
-
-.brand-orange-bg {
-  background-color: #e98024; }
-
 .asset-details {
   width: 100%; }
   .asset-details h5 {
@@ -1456,7 +1444,8 @@ nav.sidebar {
 
 .digit-stats-card {
   width: 100%;
-  height: 400px; }
+  max-height: 100%;
+  padding: 0.25rem; }
 
 .digit-stats-chart {
   display: flex;
@@ -1484,11 +1473,12 @@ nav.sidebar {
     background-color: #c03; }
 
 .digit-stats-percentage {
-  text-align: center; }
+  text-align: center;
+  line-height: 2.5; }
 
 .digit-stats-digit {
   font-size: 1.5em;
-  margin: 0.25rem;
+  margin-right: 0.25rem;
   display: flex;
   justify-content: center;
   align-items: center; }
