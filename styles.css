@@ -1156,6 +1156,7 @@ body {
   flex-direction: column;
   align-items: flex-start; }
   .workspace-panel > div {
+    width: 100%;
     position: relative;
     top: 0;
     left: 0; }
@@ -2210,11 +2211,13 @@ input[type=time]::-webkit-calendar-picker-indicator {
   align-items: center;
   font-size: 1rem; }
 
-.watchlist-item:hover {
-  box-shadow: 0 0 0 0.25rem rgba(42, 48, 82, 0.25); }
+.watchlist-item {
+  border-radius: 2px; }
+  .watchlist-item:hover {
+    background: rgba(42, 48, 82, 0.05); }
 
 .watchlist-item + .watchlist-item {
-  margin-bottom: 1rem; }
+  margin-top: 0.5rem; }
 
 .video-list {
   margin: 0;
