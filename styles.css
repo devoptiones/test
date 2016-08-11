@@ -71,10 +71,10 @@ table {
 
 .app ::-webkit-scrollbar {
   -webkit-appearance: none;
-  width: .5em; }
+  width: 0.5em; }
 
 .app ::-webkit-scrollbar-thumb {
-  border-radius: .3em;
+  border-radius: 0.3em;
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
 
@@ -301,12 +301,12 @@ form {
   color: white;
   background: #c03;
   border-radius: 2px;
-  padding: 0.25rem .5rem; }
+  padding: 0.25rem 0.5rem; }
 
 .notice-msg {
   color: #404448;
   border-radius: 2px;
-  padding: 0.25rem .5rem;
+  padding: 0.25rem 0.5rem;
   background-color: #fef1cf; }
 
 .text-only {
@@ -1493,8 +1493,8 @@ nav.sidebar {
 
 .drop-down {
   display: flex;
-  max-height: 90vh;
-  max-width: 90vw;
+  max-height: 80vh;
+  max-width: 80vw;
   overflow: auto;
   position: absolute;
   z-index: 10000;
@@ -2137,7 +2137,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .start-time-selector > label + label {
     margin-left: 3px; }
   .start-time-selector > label > input {
-    margin: 0 0.5rem; }
+    margin: 0 0.25rem; }
 
 .duration-text {
   line-height: 2;
