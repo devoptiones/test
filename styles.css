@@ -1579,23 +1579,23 @@ nav.sidebar {
 .layout-switch-btn + span + .layout-switch-btn {
   margin-left: 0.5rem; }
 
-.asset-info-card {
+.examine-asset-card {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column; }
-  .asset-info-card .asset-info-picker {
+  .examine-asset-card .examine-asset-picker {
     margin: 0.5rem;
     line-height: 1.5; }
-    .asset-info-card .asset-info-picker span {
+    .examine-asset-card .examine-asset-picker span {
       margin: 0.25rem;
       line-height: 2; }
-    .asset-info-card .asset-info-picker h4 {
+    .examine-asset-card .examine-asset-picker h4 {
       margin: 0.25rem;
       font-size: 15px;
       line-height: 1.5;
       flex: 1; }
-  .asset-info-card .daily-prices-card {
+  .examine-asset-card .daily-prices-card {
     overflow: auto; }
 
 .upgrade-card {
