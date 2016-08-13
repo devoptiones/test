@@ -204,7 +204,7 @@ input[type=button],
 .btn-secondary {
   border-radius: 3px;
   cursor: pointer;
-  padding: 0.75em; }
+  padding: 0.5em; }
 
 button,
 input[type=submit],
@@ -391,7 +391,7 @@ strong {
   display: flex;
   height: 2.5rem;
   background: #2a3052; }
-  #footer .full-screen-button,
+  #footer .btn-secondary,
   #footer .language-picker {
     margin: 0.25rem; }
 
@@ -1139,8 +1139,13 @@ body {
 .root {
   width: 100%;
   height: 100%;
-  display: flex;
+  display: flex; }
+
+.screen {
   background-color: white; }
+
+.inverse .screen {
+  background-color: #1d1d24; }
 
 .disabled {
   opacity: 0.2; }
@@ -1323,7 +1328,7 @@ div[role=tabpanel] {
 
 td,
 th {
-  padding: 0.2rem 0.4rem; }
+  padding: 0.25em; }
   td.centered,
   th.centered {
     text-align: center; }
@@ -1652,7 +1657,7 @@ nav.sidebar {
   display: flex;
   height: 2.5rem;
   background: #2a3052; }
-  #footer .full-screen-button,
+  #footer .btn-secondary,
   #footer .language-picker {
     margin: 0.25rem; }
 
@@ -1797,6 +1802,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
     margin: 0; }
   .mobile-content tbody tr {
     cursor: pointer; }
+
+.inverse .mobile-page {
+  background: #1d1d24; }
 
 .mobile-nav-btn {
   text-align: center;
