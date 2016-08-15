@@ -293,11 +293,13 @@ form {
 
 .row.focus input,
 .row.focus textarea {
-  background-color: #fef1cf; }
+  background-color: rgba(255, 236, 179, 0.75); }
 
 .errorrow,
 .errorfield,
-.error-msg {
+.error-msg,
+.notice-msg,
+.update-notice {
   color: white;
   background: #c03;
   border-radius: 2px;
@@ -305,9 +307,11 @@ form {
 
 .notice-msg {
   color: #404448;
-  border-radius: 2px;
-  padding: 0.25rem 0.5rem;
-  background-color: #fef1cf; }
+  background-color: rgba(255, 236, 179, 0.75); }
+
+.update-notice {
+  color: white;
+  background-color: #e98024; }
 
 .text-only {
   color: #404448; }
@@ -996,8 +1000,23 @@ table {
 
 th,
 td {
-  padding: 0.25rem;
+  padding: 0.5em 0.25em;
   vertical-align: middle; }
+  th.centered,
+  td.centered {
+    text-align: center; }
+  th.left, th.textual,
+  td.left,
+  td.textual {
+    text-align: left; }
+  th.right, th.numeric, th.date,
+  td.right,
+  td.numeric,
+  td.date {
+    text-align: right; }
+  th.row-id,
+  td.row-id {
+    font-weight: bold; }
 
 tr:focus {
   outline: none; }
@@ -1326,25 +1345,6 @@ div[role=tabpanel] {
   align-content: center;
   margin: 0.5rem; }
 
-td,
-th {
-  padding: 0.25em; }
-  td.centered,
-  th.centered {
-    text-align: center; }
-  td.left, td.textual,
-  th.left,
-  th.textual {
-    text-align: left; }
-  td.right, td.numeric, td.date,
-  th.right,
-  th.numeric,
-  th.date {
-    text-align: right; }
-  td.row-id,
-  th.row-id {
-    font-weight: bold; }
-
 .open-notice,
 .closed-notice {
   padding: 0.2em 0.4em;
@@ -1590,15 +1590,16 @@ nav.sidebar {
   display: flex;
   flex-direction: column; }
   .examine-asset-card .examine-asset-picker {
-    margin: 0.5rem;
+    margin: 0.5em;
     line-height: 1.5; }
-    .examine-asset-card .examine-asset-picker span {
-      margin: 0.25rem;
-      line-height: 2; }
+    .examine-asset-card .examine-asset-picker span,
     .examine-asset-card .examine-asset-picker h4 {
       margin: 0.25rem;
-      font-size: 15px;
-      line-height: 1.5;
+      line-height: 1.5; }
+    .examine-asset-card .examine-asset-picker span {
+      font-size: 1em; }
+    .examine-asset-card .examine-asset-picker h4 {
+      font-size: 1.2em;
       flex: 1; }
   .examine-asset-card .daily-prices-card {
     overflow: auto; }
@@ -1776,8 +1777,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
     min-height: 200px; }
   .mobile-content .sell-at-market-btn,
   .mobile-content .buy-again-btn {
-    width: 100%; }
-  .mobile-content .sell-at-market-btn + .buy-again-btn {
+    width: 100%;
     margin-top: 0.5rem; }
   .mobile-content .forward-starting-picker {
     display: flex;
@@ -1846,8 +1846,10 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .news-list-card,
 .article {
-  padding: 0.5em;
   font-size: 1rem; }
+
+.article {
+  padding: 0.5em; }
 
 .news-list-card,
 .video-list {
@@ -1857,19 +1859,18 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .article h1,
 .article-preview h2 {
   font-size: 1.5rem;
-  margin: 0.5rem 0; }
+  margin: 0 0 0.5rem; }
 
 .article-preview {
   display: inline-block;
   text-decoration: none;
-  color: #404448; }
+  color: #404448;
+  cursor: pointer;
+  padding: 0.5em; }
   .article-preview p {
     margin: 0; }
   .article-preview:hover {
-    box-shadow: 0 0 0 0.25rem rgba(42, 48, 82, 0.25); }
-
-.article-preview + .article-preview {
-  margin-top: 1rem; }
+    background: rgba(42, 48, 82, 0.1); }
 
 .portfolio-row {
   cursor: pointer; }
