@@ -405,6 +405,8 @@ strong {
   display: flex;
   align-items: center;
   justify-content: center; }
+  #clock .tooltip {
+    margin-top: -3rem; }
 
 *,
 *::after,
@@ -1382,7 +1384,7 @@ div[role=tabpanel] {
   border: 1px solid rgba(42, 48, 82, 0.25);
   color: #2a3052;
   font-weight: bold;
-  padding: 0.125rem 0.25rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 2px;
   position: absolute;
   display: none; }
@@ -1588,7 +1590,8 @@ nav.sidebar {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  flex: 1; }
   .examine-asset-card .examine-asset-picker {
     margin: 0.5em;
     line-height: 1.5; }
@@ -1668,6 +1671,8 @@ nav.sidebar {
   display: flex;
   align-items: center;
   justify-content: center; }
+  #clock .tooltip {
+    margin-top: -3rem; }
 
 input::-webkit-calendar-picker-indicator {
   display: none; }
