@@ -1811,6 +1811,10 @@ input[type=time]::-webkit-calendar-picker-indicator {
     flex-direction: row; }
   .mobile-content .payout-display {
     flex-direction: row; }
+    .mobile-content .payout-display .param-field {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
   .mobile-content .param-row {
     display: flex;
     flex-direction: row; }
@@ -2051,6 +2055,10 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .vertical .digit-stats-col {
   flex-direction: row-reverse; }
 
+.vertical .payout-display .param-field {
+  display: flex;
+  flex-direction: column; }
+
 .horizontal .trade-panel {
   flex-direction: column; }
 
@@ -2144,7 +2152,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
     width: 100% !important; }
 
 .payout-value {
-  font-size: 1.2em; }
+  font-weight: bold;
+  font-size: 2em; }
 
 .duration-input {
   display: flex;
