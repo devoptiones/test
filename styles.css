@@ -1113,7 +1113,8 @@ tbody > tr:hover {
   background: #2a3052; }
 
 .asset-details {
-  width: 100%; }
+  width: 100%;
+  overflow: auto; }
   .asset-details h5 {
     margin: 0.75rem 0.5rem 0.25rem; }
 
@@ -1465,6 +1466,7 @@ nav.sidebar {
 .digit-stats-card {
   width: 100%;
   max-height: 100%;
+  overflow: auto;
   padding: 0.25rem; }
 
 .digit-stats-chart {
@@ -1600,6 +1602,8 @@ nav.sidebar {
   display: flex;
   flex-direction: column;
   flex: 1; }
+  .examine-asset-card .examine-asset-picker-container {
+    margin-bottom: -0.5em; }
   .examine-asset-card .examine-asset-picker {
     margin: 0.5em;
     line-height: 1.5; }
@@ -1614,7 +1618,8 @@ nav.sidebar {
       flex: 1; }
   .examine-asset-card .daily-prices-card {
     overflow: auto;
-    -webkit-overflow-scrolling: touch; }
+    -webkit-overflow-scrolling: touch;
+    flex: 1; }
 
 .upgrade-card {
   display: flex;
