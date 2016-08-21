@@ -1854,7 +1854,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex-direction: column;
   flex: 1; }
 
-@media (orientation: landscape) {
+@media screen and (min-aspect-ratio: 13 / 9) {
+  /* landscape styles here
+/* @media (orientation: landscape) { */
   .mobile-content .trade-panel {
     flex-direction: row !important; }
   .mobile-content .trade-params {
@@ -1949,7 +1951,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
   display: flex;
   flex-direction: column; }
   .settings-card > div:nth-child(2) {
-    flex: 1; }
+    flex: 1;
+    overflow: auto; }
   .settings-card .notice-msg {
     margin-top: 0.5rem; }
   .settings-card button {
