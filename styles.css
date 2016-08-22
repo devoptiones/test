@@ -784,6 +784,10 @@ input[type=date] {
   -webkit-appearance: none;
   -moz-appearance: none; }
 
+input[type=time],
+input[type=date] {
+  margin-right: -1rem; }
+
 select,
 input[type=text],
 input[type=email],
