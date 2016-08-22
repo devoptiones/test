@@ -1621,6 +1621,9 @@ nav.sidebar {
     -webkit-overflow-scrolling: touch;
     flex: 1; }
 
+.inverse .examine-asset-picker-container {
+  background: #2a3052; }
+
 .upgrade-card {
   display: flex;
   flex-direction: column;
