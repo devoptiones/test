@@ -784,10 +784,6 @@ input[type=date] {
   -webkit-appearance: none;
   -moz-appearance: none; }
 
-::-webkit-datetime-edit {
-  background: red;
-  margin-right: -3rem; }
-
 select,
 input[type=text],
 input[type=email],
