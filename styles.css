@@ -784,8 +784,8 @@ input[type=date] {
   -webkit-appearance: none;
   -moz-appearance: none; }
 
-input[type=time],
-input[type=date] {
+input[type=time]::-webkit-datetime-edit,
+input[type=date]::-webkit-datetime-edit {
   margin-right: -1rem; }
 
 select,
