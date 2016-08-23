@@ -546,26 +546,33 @@ header {
   height: 100%;
   width: 6px;
   display: inline-block;
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
   animation: sk-stretchdelay 1.2s infinite ease-in-out; }
 
 .barspinner .rect2 {
+  -webkit-animation-delay: -1.1s;
   animation-delay: -1.1s; }
 
 .barspinner .rect3 {
+  -webkit-animation-delay: -1s;
   animation-delay: -1s; }
 
 .barspinner .rect4 {
+  -webkit-animation-delay: -0.9s;
   animation-delay: -0.9s; }
 
 .barspinner .rect5 {
+  -webkit-animation-delay: -0.8s;
   animation-delay: -0.8s; }
 
 @keyframes sk-stretchdelay {
   0%,
   40%,
   100% {
+    -webkit-transform: scaleY(1);
     transform: scaleY(1); }
   20% {
+    -webkit-transform: scaleY(2);
     transform: scaleY(2); } }
 
 .sidebar-btn {
@@ -1760,7 +1767,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .mobile-page {
   height: 100%;
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
