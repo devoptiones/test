@@ -2068,7 +2068,6 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .vertical .contract-receipt-container {
   overflow: auto;
   width: 12rem;
-  padding-right: 0.25rem;
   margin-right: 0.25rem; }
 
 .vertical .trade-panel {
@@ -2081,7 +2080,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .vertical .contract-receipt {
   overflow: auto;
   max-width: 15rem;
-  margin-right: 0.5rem; }
+  margin-right: 0.25rem; }
 
 .vertical .digit-stats-col {
   flex-direction: row-reverse; }
