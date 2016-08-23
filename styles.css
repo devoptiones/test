@@ -273,7 +273,7 @@ body {
 body,
 th,
 td {
-  line-height: 1.4; }
+  line-height: 1.25; }
 
 img {
   vertical-align: middle;
@@ -692,29 +692,29 @@ h6 {
 
 h1,
 .font-size-xxl {
-  font-size: 36.62109px; }
+  font-size: 31.104px; }
 
 h2,
 .font-size-xl {
-  font-size: 29.29688px; }
+  font-size: 25.92px; }
 
 h3,
 .font-size-l {
-  font-size: 23.4375px; }
+  font-size: 21.6px; }
 
 h4,
 .font-size-m {
-  font-size: 18.75px; }
+  font-size: 18px; }
 
 h5,
 .font-size-n {
   font-size: 15px; }
 
 .font-size-s {
-  font-size: 12px; }
+  font-size: 12.5px; }
 
 .font-size-xs {
-  font-size: 9.6px; }
+  font-size: 10.41667px; }
 
 input,
 button,
@@ -1806,6 +1806,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
   width: 100%; }
   .mobile-content .trade-panel {
     flex-direction: column; }
+  .mobile-content .trade-chart-container {
+    margin: -0.25em 0; }
   .mobile-content .modal {
     max-width: 360px; }
   .mobile-content .contract-detail {
@@ -1845,7 +1847,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
       justify-content: space-between; }
   .mobile-content .param-row {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    margin-bottom: 0.25rem; }
     .mobile-content .param-row > label {
       flex: 1;
       line-height: 2; }
@@ -2117,7 +2120,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .buy-btn,
 .buy-again-btn {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   width: 100%; }
 
 .numeric-input {
@@ -2181,7 +2184,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .payout-value {
   font-weight: bold;
-  font-size: 2em; }
+  font-size: 1.6em; }
 
 .duration-input {
   display: flex;
@@ -2197,7 +2200,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
     flex: 1; }
 
 .start-time-selector + .forward-starting-input {
-  margin-top: 0.5rem; }
+  margin-top: 0.25rem; }
 
 .forward-starting-input {
   display: flex;
