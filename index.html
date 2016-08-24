@@ -54,8 +54,10 @@
         </div>
     </div>
 </div>
-
+<script src="fastclick.js?a3e4b51688"></script>
 <script>
+    Origami.fastclick(document.body);   // disable mobile 300ms delay
+
     if (document.location.protocol === 'file:') {
         document.writeln('<script src="cordova.js"><\/script>');
         function onBackPressed(e) {
@@ -92,7 +94,7 @@
 
 <script src="boot.js?801589a60a"></script>
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch,Promise,Array.from,Array.prototype.find,Array.prototype.includes,String.prototype.startsWith,String.prototype.includes,Math.sign,Intl.~locale.en,Intl.~locale.id,Intl.~locale.ru,Intl.~locale.fr&unknown=polyfill"></script>
-<script async src="app.js?fdc5b3a2c9"></script>
+<script async src="app.js?63d28bf660"></script>
 
 <script>
     window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
