@@ -1617,6 +1617,8 @@ nav.sidebar {
   display: flex;
   align-items: center;
   padding: 0 4px 0 0; }
+  .layout-switch-btn span {
+    line-height: 1; }
 
 .layout-switch-btn + span + .layout-switch-btn {
   margin-left: 0.5rem; }
