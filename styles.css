@@ -353,6 +353,11 @@ div.media {
 strong {
   font-weight: bold; }
 
+.scrollable {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  flex: 1; }
+
 .row {
   display: flex;
   margin: 0 -0.5rem;
@@ -1120,8 +1125,9 @@ tbody > tr:hover {
 
 .asset-index-card {
   width: 100%;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch; }
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
 
 .asset-picker-filter {
   min-height: 6em; }
@@ -1130,8 +1136,8 @@ tbody > tr:hover {
   display: flex;
   flex-direction: column;
   padding: 0.5em;
-  width: 16em;
-  min-width: 12em; }
+  width: 20em;
+  min-width: 15em; }
 
 .asset-list {
   overflow: auto;
@@ -1612,8 +1618,6 @@ nav.sidebar {
       font-size: 1.2em;
       flex: 1; }
   .examine-asset-card .daily-prices-card {
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
     flex: 1; }
 
 .inverse .examine-asset-picker-container {
@@ -1869,6 +1873,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
   background: black;
   padding: 5px;
   margin: 5px;
@@ -2033,10 +2038,6 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .statement-card [role=tablist] {
     margin-bottom: 0; }
 
-.statement-list {
-  overflow: initial;
-  -webkit-overflow-scrolling: touch; }
-
 .statement-row {
   cursor: pointer; }
 
@@ -2131,8 +2132,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
   box-shadow: inset 0 0 0 1px rgba(42, 48, 82, 0.5); }
 
 .trade-type-picker {
-  width: 20em;
-  height: 17em; }
+  width: 22em;
+  height: 10em;
+  overflow: hidden; }
 
 .type-pairs-list {
   display: flex;
@@ -2144,7 +2146,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .type-pair * {
     flex: 1; }
   .type-pair div[role=tab] {
-    margin: 0 0.5em; }
+    margin: 0.5em; }
   .type-pair div[role=tab][aria-selected=true] {
     color: #e98024;
     box-shadow: inset 0 -0.2em 0 0 #e98024; }
@@ -2270,8 +2272,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .trading-times-card {
   width: 100%;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch; }
+  display: flex;
+  flex-direction: column; }
 
 .trading-times-filter {
   display: flex; }
