@@ -1751,7 +1751,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .mobile-page {
   height: 100%;
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1865,9 +1865,17 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex: 1; }
 
 .ios-padder {
-  height: 49px;
-  background: red;
-  padding: 0.25em; }
+  height: 59px;
+  font-size: 1.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px; }
+  .ios-padder svg {
+    margin: 0 6px 3px 0; }
 
 @media screen and (min-aspect-ratio: 13 / 9) {
   .mobile-content .trade-panel {
@@ -1875,25 +1883,21 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .mobile-content .trade-params {
     margin-left: 0.5em; } }
 
-@media screen and (max-aspect-ratio: 13 / 9) and (max-height: 700px) {
+@media screen and (max-aspect-ratio: 13 / 9) and (min-height: 660px) {
   .mobile-page {
-    font-size: 17px; } }
-
-@media screen and (max-aspect-ratio: 13 / 9) and (max-height: 620px) {
-  .mobile-page {
-    font-size: 16px; } }
+    font-size: 15px; } }
 
 @media screen and (max-aspect-ratio: 13 / 9) and (max-height: 560px) {
   .mobile-page {
-    font-size: 14px; } }
+    font-size: 13px; } }
 
 @media screen and (max-aspect-ratio: 13 / 9) and (max-height: 520px) {
   .mobile-page {
-    font-size: 13px; } }
+    font-size: 12px; } }
 
 @media screen and (max-aspect-ratio: 13 / 9) and (max-height: 480px) {
   .mobile-page {
-    font-size: 12px; } }
+    font-size: 11px; } }
 
 .news-list-card,
 .article {
