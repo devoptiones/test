@@ -1080,7 +1080,6 @@ tbody > tr:hover {
   overflow: hidden;
   font-size: 0.85em;
   text-transform: uppercase;
-  margin-bottom: 0.5em;
   flex-shrink: 0; }
   [role=tablist].vertical {
     margin-bottom: 0;
@@ -1992,7 +1991,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .settings-cashier-lock,
 .settings-self-exclusion,
 .settings-limits {
-  padding: 0 0.5rem 0.5rem; }
+  padding: 0.5em; }
 
 .settings-address label {
   display: inline-block;
