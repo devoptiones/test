@@ -1580,12 +1580,12 @@ nav.sidebar {
     transition: 0.3s; }
 
 #logo {
-  margin: 0.25rem; }
+  margin: 0.5em; }
   #logo img {
-    height: 2em; }
+    height: 2.5em; }
     #logo img:nth-child(2) {
-      margin-left: 0.25rem;
-      height: 1.75rem; }
+      margin-left: 0.25em;
+      height: 1.75em; }
 
 .layout-switch-btn {
   display: flex;
