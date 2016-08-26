@@ -1864,6 +1864,11 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex-direction: column;
   flex: 1; }
 
+.ios-padder {
+  height: 49px;
+  background: red;
+  padding: 0.25em; }
+
 @media screen and (min-aspect-ratio: 13 / 9) {
   .mobile-content .trade-panel {
     flex-direction: row !important; }
