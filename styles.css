@@ -1125,7 +1125,7 @@ tbody > tr:hover {
   -webkit-overflow-scrolling: touch; }
 
 .asset-picker-filter {
-  min-height: 5em; }
+  min-height: 6em; }
 
 .asset-picker-container {
   display: flex;
@@ -2267,8 +2267,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   -webkit-overflow-scrolling: touch; }
 
 .trading-times-filter {
-  display: flex;
-  margin-bottom: -0.5rem; }
+  display: flex; }
   .trading-times-filter > * {
     width: 50%; }
 
