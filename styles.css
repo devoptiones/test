@@ -1865,7 +1865,6 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex: 1; }
 
 .ios-padder {
-  height: 59px;
   font-size: 1.4em;
   display: flex;
   justify-content: center;
