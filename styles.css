@@ -2133,7 +2133,6 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .trade-type-picker {
   width: 22em;
-  height: 10em;
   overflow: hidden; }
 
 .type-pairs-list {
