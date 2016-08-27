@@ -275,9 +275,6 @@ img {
   border: 0;
   max-width: 100%; }
 
-img.h10 {
-  height: 10em; }
-
 acronym,
 abbr {
   cursor: help; }
@@ -1121,6 +1118,7 @@ tbody > tr:hover {
 .asset-index-card {
   width: 100%;
   height: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column; }
 
@@ -2281,7 +2279,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .watchlist-card {
   width: 100%;
-  height: 100%;
+  flex: 1;
   padding: 0.25rem;
   overflow: auto;
   -webkit-overflow-scrolling: touch; }
