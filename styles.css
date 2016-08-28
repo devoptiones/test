@@ -204,7 +204,7 @@ input[type=button],
 .btn-secondary {
   border-radius: 3px;
   cursor: pointer;
-  padding: 0.5em; }
+  padding: 0.75em; }
 
 button,
 input[type=submit],
@@ -1919,7 +1919,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
   cursor: pointer;
   padding: 0.5em; }
   .article-preview p {
-    margin: 0; }
+    margin: 0;
+    line-height: 1.2; }
   .article-preview:hover {
     background: rgba(42, 48, 82, 0.1); }
 
