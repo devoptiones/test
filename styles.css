@@ -2234,6 +2234,10 @@ input[type=time]::-webkit-calendar-picker-indicator {
   align-items: stretch;
   background: rgba(42, 48, 82, 0.1);
   border-radius: 2px; }
+  .picker-label .picker-value {
+    flex: 1; }
+  .picker-label img + .picker-value {
+    text-align: center; }
   .picker-label img {
     height: 2em;
     padding: 1px 0; }
