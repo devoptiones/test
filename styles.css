@@ -2326,3 +2326,18 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .video-thumbnail + .video-thumbnail {
   margin-top: 1em; }
+
+.buy-btn:active,
+.btn-flat:active,
+.picker-label:active,
+.close-btn:active,
+select:active,
+[role=tab]:active {
+  color: white;
+  background-color: rgba(42, 48, 82, 0.75); }
+
+.mobile-back-btn:active,
+.mobile-nav-btn:active,
+.sidebar-btn:active {
+  color: #2a3052;
+  background-color: rgba(255, 255, 255, 0.75); }
