@@ -1901,11 +1901,6 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .article {
   padding: 0.5em; }
 
-.news-list-card,
-.video-list {
-  overflow: auto;
-  -webkit-overflow-scrolling: touch; }
-
 .article h1,
 .article-preview h2 {
   font-size: 1.4em;
@@ -2282,9 +2277,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .watchlist-card {
   width: 100%;
   flex: 1;
-  padding: 0.25rem;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch; }
+  padding: 0.25rem; }
 
 .watchlist-details {
   display: flex;
