@@ -1867,6 +1867,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .ios-padder {
   font-size: 1.4em;
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2333,7 +2334,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .close-btn:active,
 select:active,
 [role=tab]:active,
-.start-time-selector label:active {
+.ios-padder .start-time-selector label:active {
   color: white !important;
   background-color: rgba(42, 48, 82, 0.75) !important; }
 
