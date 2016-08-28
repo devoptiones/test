@@ -1110,8 +1110,7 @@ tbody > tr:hover {
   background: #2a3052; }
 
 .asset-details {
-  width: 100%;
-  overflow: auto; }
+  width: 100%; }
   .asset-details h5 {
     margin: 0.75em 0.5em 0.25em; }
 
