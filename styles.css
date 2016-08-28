@@ -1453,6 +1453,12 @@ nav.sidebar {
   .empty-slate p {
     text-align: center; }
 
+.about-card {
+  max-width: 20em;
+  margin: 0 auto; }
+  .about-card .version-info {
+    padding: 1em; }
+
 .digit-stats-card {
   width: 100%;
   max-height: 100%;
@@ -2261,7 +2267,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex-direction: column; }
 
 .trading-times-filter {
-  display: flex; }
+  display: flex;
+  min-height: 2.5em; }
   .trading-times-filter > * {
     width: 50%; }
 
