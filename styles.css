@@ -2332,12 +2332,22 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .picker-label:active,
 .close-btn:active,
 select:active,
-[role=tab]:active {
-  color: white;
-  background-color: rgba(42, 48, 82, 0.75); }
+[role=tab]:active,
+.start-time-selector label:active {
+  color: white !important;
+  background-color: rgba(42, 48, 82, 0.75) !important; }
 
 .mobile-back-btn:active,
 .mobile-nav-btn:active,
 .sidebar-btn:active {
-  color: #2a3052;
-  background-color: rgba(255, 255, 255, 0.75); }
+  color: #2a3052 !important;
+  background-color: rgba(255, 255, 255, 0.75) !important; }
+
+.inverse .btn-flat:active,
+.inverse .picker-label:active,
+.inverse .close-btn:active,
+.inverse select:active,
+.inverse [role=tab]:active,
+.inverse .start-time-selector label:active {
+  color: #2a3052 !important;
+  background-color: rgba(255, 255, 255, 0.75) !important; }
