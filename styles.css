@@ -204,7 +204,7 @@ input[type=button],
 .btn-secondary {
   border-radius: 3px;
   cursor: pointer;
-  padding: 0.75em; }
+  padding: 0.75em 1em; }
 
 button,
 input[type=submit],
@@ -371,7 +371,7 @@ strong {
   background: #2a3052; }
   #footer .btn-secondary,
   #footer .language-picker {
-    margin: 0.5em; }
+    margin: 0.25em; }
   #footer .btn-secondary:hover {
     background-color: inherit; }
 
@@ -1174,7 +1174,7 @@ body {
 .panels {
   flex: 1;
   display: flex;
-  max-height: calc(100% - 5em); }
+  max-height: calc(100% - 6em); }
 
 .workspace-panel {
   overflow: auto;
@@ -1529,6 +1529,7 @@ nav.sidebar {
   display: flex;
   background: #2a3052;
   color: white;
+  align-items: center;
   justify-content: space-between; }
   .header #hamburger-btn {
     line-height: 3;
@@ -1541,8 +1542,7 @@ nav.sidebar {
     top: 3.5em !important;
     left: inherit; }
   .header .balance {
-    font-size: 1.2em;
-    line-height: 2 !important; }
+    font-size: 1.4em; }
 
 #hamburger-opener {
   display: none; }
@@ -1577,7 +1577,7 @@ nav.sidebar {
     transition: 0.3s; }
 
 #logo {
-  margin: 0.5em; }
+  margin: 0.25em; }
   #logo img {
     height: 2.5em; }
     #logo img:nth-child(2) {
@@ -1676,7 +1676,7 @@ nav.sidebar {
   background: #2a3052; }
   #footer .btn-secondary,
   #footer .language-picker {
-    margin: 0.5em; }
+    margin: 0.25em; }
   #footer .btn-secondary:hover {
     background-color: inherit; }
 
