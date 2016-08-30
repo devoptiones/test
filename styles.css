@@ -1000,7 +1000,7 @@ table {
 
 th,
 td {
-  padding: 0.5em;
+  padding: 0.75em 0.25em;
   vertical-align: middle; }
   th.centered,
   td.centered {
@@ -1043,7 +1043,6 @@ th {
 tr {
   border-bottom: 1px solid rgba(42, 48, 82, 0.1); }
 
-tr:focus,
 tr.selected {
   background-color: rgba(42, 48, 82, 0.2); }
 
@@ -1065,7 +1064,6 @@ tbody > tr:hover {
 .inverse tr {
   border-bottom: 1px solid rgba(221, 221, 221, 0.1); }
 
-.inverse tr:focus,
 .inverse tr.selected {
   background-color: rgba(221, 221, 221, 0.2); }
 
@@ -1092,7 +1090,7 @@ tbody > tr:hover {
   [role=tablist] [role=tab] {
     text-align: center;
     cursor: pointer;
-    padding: 1em 0.25em;
+    padding: 1.5em 0.25em;
     width: 100%;
     white-space: nowrap; }
     [role=tablist] [role=tab] {
@@ -1144,7 +1142,7 @@ tbody > tr:hover {
 
 .asset-picker-item td {
   text-align: left;
-  padding: 0; }
+  padding: 0.25em; }
 
 body {
   height: 100%;
@@ -1405,7 +1403,7 @@ div[role=tab] .close-btn {
 nav.sidebar {
   display: flex;
   flex-direction: column;
-  width: 240px;
+  width: 15em;
   background: #2a3052;
   color: white;
   margin: -3.5em -0.5em -0.5em; }
@@ -1589,7 +1587,8 @@ nav.sidebar {
   align-items: center;
   padding: 0 4px 0 0; }
   .layout-switch-btn span {
-    line-height: 1; }
+    line-height: 1;
+    padding: 0.25em; }
 
 .layout-switch-btn + span + .layout-switch-btn {
   margin-left: 0.5rem; }
@@ -2341,7 +2340,10 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .close-btn:active,
 select:active,
 [role=tab]:active,
-.ios-padder .start-time-selector label:active {
+.ios-padder:active,
+.article-preview:active,
+.video-thumbnail:active,
+.start-time-selector label:active {
   color: white !important;
   background-color: rgba(42, 48, 82, 0.75) !important; }
 
@@ -2354,6 +2356,8 @@ select:active,
 .inverse .btn-flat:active,
 .inverse .picker-label:active,
 .inverse .close-btn:active,
+.inverse .article-preview:active,
+.inverse .video-thumbnail:active,
 .inverse select:active,
 .inverse [role=tab]:active,
 .inverse .start-time-selector label:active {
