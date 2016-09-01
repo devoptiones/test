@@ -1,3 +1,5 @@
 Hash: 9a56cc72acac2de6f40c
 Version: webpack 1.9.10
-Time: 17ms
+Time: 22ms
+
+ERROR in Entry module not found: Error: Cannot resolve 'file' or 'directory' ./src in /Users/boris/Code/binary/next-gen/build
