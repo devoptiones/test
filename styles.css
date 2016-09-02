@@ -1108,7 +1108,8 @@ tbody > tr:hover {
   background: #2a3052; }
 
 .asset-details {
-  width: 100%; }
+  width: 100%;
+  padding: 0.25em; }
   .asset-details h5 {
     margin: 0.75em 0.5em 0.25em; }
 
@@ -1118,6 +1119,8 @@ tbody > tr:hover {
   flex: 1;
   display: flex;
   flex-direction: column; }
+  .asset-index-card .asset-index-data {
+    padding: 0.25em; }
 
 .asset-picker-filter {
   min-height: 6em; }
@@ -1555,6 +1558,9 @@ nav.sidebar {
     left: -300px;
     z-index: 995; }
 
+.mobile-toolbar .sidebar {
+  height: 100%; }
+
 #hamburger-overlay {
   position: fixed;
   left: 0;
@@ -1614,7 +1620,8 @@ nav.sidebar {
       font-size: 1.2em;
       flex: 1; }
   .examine-asset-card .daily-prices-card {
-    flex: 1; }
+    flex: 1;
+    padding: 0.25em; }
 
 .inverse .examine-asset-picker-container {
   background: #2a3052; }
@@ -1935,7 +1942,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
   height: 100%;
   flex: 1;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 0.25em; }
   .portfolio-card .notice-msg {
     margin: 0.5rem; }
 
@@ -2036,9 +2044,10 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex: 1; }
   .statement-card [role=tablist] {
     margin-bottom: 0; }
-
-.statement-row {
-  cursor: pointer; }
+  .statement-card .statement-list {
+    padding: 0.25em; }
+  .statement-card .statement-row {
+    cursor: pointer; }
 
 .vertical .errorfield {
   margin-bottom: 0.5em; }
@@ -2276,15 +2285,15 @@ input[type=time]::-webkit-calendar-picker-indicator {
   width: 100%;
   display: flex;
   flex-direction: column; }
-
-.trading-times-filter {
-  display: flex;
-  min-height: 2.5em; }
-  .trading-times-filter > * {
-    width: 50%; }
-
-.trading-times-date-picker > input {
-  width: 100%; }
+  .trading-times-card .trading-times-filter {
+    display: flex;
+    min-height: 2.5em; }
+    .trading-times-card .trading-times-filter > * {
+      width: 50%; }
+  .trading-times-card .trading-times-date-picker > input {
+    width: 100%; }
+  .trading-times-card .trading-times-data {
+    padding: 0.25em; }
 
 .watchlist-table tr:not(:hover) .close-btn {
   visibility: hidden; }
@@ -2305,6 +2314,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .watchlist-item {
   border-radius: 2px; }
+  .watchlist-item svg {
+    max-height: 100%; }
   .watchlist-item:hover {
     background: rgba(42, 48, 82, 0.05); }
 
