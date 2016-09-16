@@ -212,6 +212,7 @@ input[type=button],
 .btn-primary {
   border: 0;
   color: white;
+  fill: white;
   background: #2e8836; }
   button:focus,
   input[type=submit]:focus,
@@ -249,10 +250,20 @@ input::-moz-focus-outer {
     box-shadow: inset 0 0 0 1.5px #2a3052; }
 
 .inverse .btn-secondary {
-  color: white !important;
-  box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.75); }
+  color: #bebebe !important;
+  box-shadow: inset 0 0 0 1.5px rgba(190, 190, 190, 0.75); }
   .inverse .btn-secondary:not(:disabled):hover {
-    box-shadow: inset 0 0 0 1.5px white; }
+    box-shadow: inset 0 0 0 1.5px #bebebe; }
+
+.btn-flat {
+  color: #2a3052;
+  padding: 0;
+  height: 2.5em;
+  width: 2.5em;
+  background: rgba(42, 48, 82, 0.1);
+  box-shadow: none; }
+  .btn-flat:hover {
+    background: rgba(42, 48, 82, 0.1) !important; }
 
 *,
 *::before,
@@ -267,7 +278,7 @@ html {
 
 body {
   background: #fff;
-  color: #404448;
+  color: #3e3e3e;
   font-family: roboto, sans-serif; }
 
 img {
@@ -294,11 +305,11 @@ form {
 .update-notice {
   color: white;
   background: #c03;
-  border-radius: 2px;
+  border-radius: 3px;
   padding: 0.25em 0.5em; }
 
 .notice-msg {
-  color: #404448;
+  color: #3e3e3e;
   background-color: rgba(255, 236, 179, 0.75); }
 
 .update-notice {
@@ -306,7 +317,7 @@ form {
   background-color: #e98024; }
 
 .text-only {
-  color: #404448; }
+  color: #3e3e3e; }
 
 /* global styles */
 #popup {
@@ -636,6 +647,96 @@ header {
   .nav a:hover {
     text-decoration: none; }
 
+.brand-blue {
+  color: #2a3052; }
+
+.brand-blue-bg {
+  background-color: #2a3052; }
+
+.brand-orange {
+  color: #e98024; }
+
+.brand-orange-bg {
+  background-color: #e98024; }
+
+.inverse .trade-chart {
+  color: #bebebe; }
+
+.trade-chart,
+.contract-chart {
+  color: #3e3e3e; }
+  .trade-chart button,
+  .contract-chart button {
+    color: #3e3e3e; }
+    .trade-chart button:hover,
+    .contract-chart button:hover {
+      background: rgba(42, 48, 82, 0.1) !important; }
+  .inverse .trade-chart button, .inverse
+  .contract-chart button {
+    color: #bebebe; }
+    .inverse .trade-chart button:hover, .inverse
+    .contract-chart button:hover {
+      background: rgba(190, 190, 190, 0.1) !important; }
+
+.binary-chart-time-frame-picker {
+  height: 30px; }
+
+.binary-chart-time-frame-picker button {
+  background: rgba(190, 190, 190, 0.25) !important;
+  margin-right: 2px; }
+
+.binary-chart-submenu {
+  border-radius: 3px;
+  background: white; }
+
+.inverse .binary-chart-submenu {
+  background: #161a24; }
+
+.binary-chart-submenu button {
+  color: #3e3e3e;
+  background: transparent;
+  border-radius: 0; }
+
+.binary-chart-picker-item {
+  text-align: left;
+  padding: 8px;
+  display: flex;
+  align-items: center; }
+  .binary-chart-picker-item svg {
+    margin-right: 8px; }
+
+.pressed {
+  background: #2a3052 !important; }
+  .pressed svg {
+    fill: #bebebe; }
+
+.binary-chart-zoom-button {
+  opacity: 0.75;
+  background: rgba(42, 48, 82, 0.25) !important; }
+  .binary-chart-zoom-button:hover {
+    opacity: 1; }
+
+.inverse .binary-chart-zoom-button {
+  opacity: 0.75;
+  background: rgba(190, 190, 190, 0.25) !important; }
+  .inverse .binary-chart-zoom-button:hover {
+    opacity: 1; }
+
+.binary-chart-toolbar {
+  height: 28px; }
+
+.binary-chart-toolbar > * {
+  margin-right: 2px; }
+
+.binary-chart-button {
+  background: rgba(42, 48, 82, 0.1);
+  border-radius: 3px;
+  min-width: 28px; }
+
+.binary-chart-button,
+.binary-chart-time-frame-picker > button {
+  padding: 5px; }
+
 a:not([class]),
 a:not([class]):visited {
   color: #2a3052;
@@ -727,12 +828,16 @@ h6 {
   h6 a {
     color: #2a3052 !important; }
 
+.react-material-design-icon,
+.binary-icon {
+  fill: #2a3052; }
+
 .inverse {
-  background: #1d1d24;
-  color: #ddd; }
+  background: #161a24;
+  color: #bebebe; }
 
 .inferse ol li::before {
-  color: #ddd; }
+  color: #bebebe; }
 
 .inverse a:not([class]),
 .inverse h1,
@@ -742,6 +847,10 @@ h6 {
 .inverse h5,
 .inverse h6 {
   color: #eee; }
+
+.inverse .react-material-design-icon,
+.inverse .binary-icon {
+  fill: #bebebe; }
 
 form {
   margin-bottom: 1em; }
@@ -848,13 +957,13 @@ fieldset .error-msg {
   text-align: center; }
 
 #dobdd {
-  border-radius: 2px 0 0 2px; }
+  border-radius: 3px 0 0 3px; }
 
 #dobmm {
   border-radius: 0; }
 
 #dobyy {
-  border-radius: 0 2px 2px 0; }
+  border-radius: 0 3px 3px 0; }
 
 input[type=range] {
   -webkit-appearance: none;
@@ -889,7 +998,7 @@ input[type=datepicker],
 .dob,
 .inputlike {
   vertical-align: bottom;
-  border-radius: 2px; }
+  border-radius: 3px; }
   select:focus,
   textarea:focus,
   input[type=text]:focus,
@@ -961,9 +1070,9 @@ input[type=datepicker],
 .inverse input[type=datepicker],
 .inverse .dob,
 .inverse .inputlike {
-  color: #ddd;
-  background-color: #343440;
-  border: 1px solid rgba(221, 221, 221, 0.25); }
+  color: #bebebe;
+  background-color: #293144;
+  border: 1px solid rgba(190, 190, 190, 0.25); }
   .inverse select:hover,
   .inverse textarea:hover,
   .inverse input[type=text]:hover,
@@ -977,7 +1086,7 @@ input[type=datepicker],
   .inverse input[type=datepicker]:hover,
   .inverse .dob:hover,
   .inverse .inputlike:hover {
-    border-color: rgba(221, 221, 221, 0.5) !important; }
+    border-color: rgba(190, 190, 190, 0.5) !important; }
   .inverse select:focus,
   .inverse textarea:focus,
   .inverse input[type=text]:focus,
@@ -991,7 +1100,7 @@ input[type=datepicker],
   .inverse input[type=datepicker]:focus,
   .inverse .dob:focus,
   .inverse .inputlike:focus {
-    border-color: #ddd !important; }
+    border-color: #bebebe !important; }
 
 table {
   width: 100%;
@@ -1051,24 +1160,24 @@ tbody > tr:hover {
 
 .inverse thead,
 .inverse tbody {
-  border-bottom: 2px solid rgba(221, 221, 221, 0.1); }
+  border-bottom: 2px solid rgba(190, 190, 190, 0.1); }
 
 .inverse th,
 .inverse td {
-  color: #ddd; }
+  color: #bebebe; }
 
 .inverse th {
   font-weight: bold;
   background: rgba(42, 48, 82, 0.25); }
 
 .inverse tr {
-  border-bottom: 1px solid rgba(221, 221, 221, 0.1); }
+  border-bottom: 1px solid rgba(190, 190, 190, 0.1); }
 
 .inverse tr.selected {
-  background-color: rgba(221, 221, 221, 0.2); }
+  background-color: rgba(190, 190, 190, 0.2); }
 
 .inverse tbody > tr:hover {
-  background-color: rgba(221, 221, 221, 0.1); }
+  background-color: rgba(190, 190, 190, 0.1); }
 
 [role=tablist] {
   display: flex;
@@ -1099,8 +1208,7 @@ tbody > tr:hover {
       color: #e98024;
       box-shadow: inset 0 -0.2em 0 0 #e98024; }
     [role=tablist] [role=tab] img {
-      width: 2em;
-      margin: 0.5em auto 0; }
+      width: 2em; }
 
 .inverse [role=tablist],
 [role=tablist].inverse {
@@ -1109,9 +1217,9 @@ tbody > tr:hover {
 
 .asset-details {
   width: 100%;
-  padding: 0.25em; }
+  padding: 0.5em; }
   .asset-details h5 {
-    margin: 0.75em 0.5em 0.25em; }
+    margin: 0.5em 0; }
 
 .asset-index-card {
   width: 100%;
@@ -1120,10 +1228,14 @@ tbody > tr:hover {
   display: flex;
   flex-direction: column; }
   .asset-index-card .asset-index-data {
-    padding: 0.25em; }
+    padding: 0.5em; }
 
 .asset-picker-filter {
-  min-height: 6em; }
+  min-height: 7em; }
+  .asset-picker-filter [role=tablist] {
+    border-radius: 3px; }
+  .asset-picker-filter [role=tab] {
+    padding: 1em 0.25em; }
 
 .asset-picker-container {
   display: flex;
@@ -1147,6 +1259,13 @@ tbody > tr:hover {
   text-align: left;
   padding: 0.25em; }
 
+.asset-picker-item td:first-child {
+  width: 2em; }
+
+.asset-picker-item th {
+  text-align: left !important;
+  padding-left: 3em !important; }
+
 body {
   height: 100%;
   width: 100%;
@@ -1167,7 +1286,7 @@ body {
   background-color: white; }
 
 .inverse .screen {
-  background-color: #1d1d24; }
+  background-color: #161a24; }
 
 .disabled {
   opacity: 0.2; }
@@ -1200,7 +1319,8 @@ table {
 
 .close-btn {
   cursor: pointer;
-  box-shadow: none !important; }
+  box-shadow: none !important;
+  width: 2em; }
   .close-btn:hover {
     box-shadow: none !important; }
 
@@ -1239,7 +1359,9 @@ fieldset {
   margin-bottom: 0.5em; }
 
 .back-btn {
-  width: 3.5em;
+  fill: #3e3e3e;
+  width: 3em !important;
+  height: 3em !important;
   padding: 0.75em; }
 
 .tick-sparklines {
@@ -1249,7 +1371,7 @@ fieldset {
 .radio-selector {
   display: flex;
   margin-bottom: 0.5em;
-  border-radius: 2px;
+  border-radius: 3px;
   background-color: rgba(42, 48, 82, 0.1); }
   .radio-selector .radio-button {
     padding: 0.5em 0;
@@ -1276,7 +1398,7 @@ fieldset {
     display: none; }
   .radio-item input[type=radio]:checked + label {
     background: #2a3052;
-    border-radius: 2px;
+    border-radius: 3px;
     color: white; }
 
 .web-page {
@@ -1292,7 +1414,7 @@ fieldset {
   margin-top: -0.75em;
   margin-left: 1em;
   width: 10em;
-  border-radius: 2px;
+  border-radius: 3px;
   background: #2a3052;
   visibility: hidden; }
 
@@ -1355,7 +1477,7 @@ div[role=tabpanel] {
   font-weight: bold;
   text-transform: uppercase;
   color: white;
-  border-radius: 2px; }
+  border-radius: 3px; }
 
 .open-notice {
   background: #2e8836; }
@@ -1370,7 +1492,7 @@ div[role=tabpanel] {
   width: 80%; }
 
 .inverse .modal {
-  background: #1d1d24; }
+  background: #161a24; }
 
 .info-icon {
   background-color: rgba(42, 48, 82, 0.5);
@@ -1385,23 +1507,13 @@ div[role=tabpanel] {
   color: #2a3052;
   font-weight: bold;
   padding: 0.25em 0.5em;
-  border-radius: 2px;
+  border-radius: 3px;
   position: absolute;
   display: none; }
 
-.btn-flat {
-  color: #2a3052;
-  padding: 0;
-  height: 2.5em;
-  width: 2.5em;
-  background: rgba(42, 48, 82, 0.1);
-  box-shadow: none; }
-  .btn-flat:hover {
-    background: rgba(42, 48, 82, 0.1) !important; }
-
 div[role=tab] .close-btn {
   background: #2a3052;
-  fill: white; }
+  fill: #3e3e3e; }
 
 nav.sidebar {
   display: flex;
@@ -1419,9 +1531,6 @@ nav.sidebar {
   font-size: 1em; }
   #right-tab-list > div[role=tab][aria-selected=true] {
     box-shadow: inset -2px 0 0 0 #e98024; }
-
-.close-svg path {
-  fill: #2a3052; }
 
 *:hover + .tooltip {
   display: block; }
@@ -1464,7 +1573,7 @@ nav.sidebar {
   width: 100%;
   max-height: 100%;
   overflow: auto;
-  padding: 0.25rem; }
+  padding: 0.5rem; }
 
 .digit-stats-chart {
   display: flex;
@@ -1483,7 +1592,7 @@ nav.sidebar {
   width: 100%;
   background-color: rgba(42, 48, 82, 0.5);
   margin: 1px;
-  border-radius: 2px;
+  border-radius: 3px;
   transform-origin: 0 50%;
   transition: 0.5s ease-in; }
   .digit-stats-bar.max {
@@ -1518,13 +1627,13 @@ nav.sidebar {
   z-index: 10000;
   background: white;
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.5);
-  border-radius: 2px; }
+  border-radius: 3px; }
   .drop-down + .full-screen-overlay {
     background: transparent;
     -webkit-backdrop-filter: none; }
 
 .inverse .drop-down {
-  background-color: #1d1d24 !important; }
+  background-color: #161a24 !important; }
 
 .header {
   display: flex;
@@ -1621,7 +1730,7 @@ nav.sidebar {
       flex: 1; }
   .examine-asset-card .daily-prices-card {
     flex: 1;
-    padding: 0.25em; }
+    padding: 0.5em; }
 
 .inverse .examine-asset-picker-container {
   background: #2a3052; }
@@ -1729,17 +1838,17 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .inverse .drop-down,
 .inverse .trade-panel {
-  background: #1d1d24; }
+  background: #161a24; }
 
 .inverse .picker-label,
 .inverse select,
 .inverse .start-time-selector > label,
 .inverse .btn-flat {
-  background-color: #2a3052 !important; }
+  background-color: #293144 !important; }
 
 .inverse .btn-flat,
 .inverse .article-preview {
-  color: #ddd; }
+  color: #bebebe; }
 
 .inverse .asset-list tbody tr.selected {
   background-color: rgba(42, 48, 82, 0.25); }
@@ -1782,6 +1891,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   overflow: auto;
   width: 100%; }
   .mobile-content .trade-panel {
+    margin: 0;
     flex-direction: column; }
   .mobile-content .trade-chart-container {
     margin: -0.25em 0; }
@@ -1837,7 +1947,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
     cursor: pointer; }
 
 .inverse .mobile-page {
-  background: #1d1d24; }
+  background: #161a24; }
 
 .mobile-nav-btn {
   text-align: center;
@@ -1861,10 +1971,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
   font-weight: normal;
   color: white !important;
   text-decoration: none;
-  flex: 1; }
-  .mobile-back-btn span {
-    height: 3.5em;
-    vertical-align: middle; }
+  flex: 1;
+  display: flex;
+  align-items: center; }
 
 .mobile-form {
   display: flex;
@@ -1925,7 +2034,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .article-preview {
   display: inline-block;
   text-decoration: none;
-  color: #404448;
+  color: #3e3e3e;
   cursor: pointer;
   padding: 0.5em; }
   .article-preview p {
@@ -1943,9 +2052,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 0.25em; }
-  .portfolio-card .notice-msg {
-    margin: 0.5rem; }
+  padding: 0.5em; }
 
 .contract-receipt h5 {
   margin: 0.5em 0; }
@@ -1953,7 +2060,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .contract-detail {
   display: flex;
   margin: 0.125em;
-  border-radius: 2px; }
+  border-radius: 3px; }
   .contract-detail > span {
     flex: 1; }
   .contract-detail > *:first-child {
@@ -1969,6 +2076,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
   font-size: 1.4em;
   text-align: center;
   margin: 0.5em 0; }
+
+.modal .contract-details-card h5 {
+  margin-bottom: 0.5em; }
 
 .modal .contract-detail {
   width: 100%;
@@ -2045,7 +2155,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .statement-card [role=tablist] {
     margin-bottom: 0; }
   .statement-card .statement-list {
-    padding: 0.25em; }
+    padding: 0.5em; }
   .statement-card .statement-row {
     cursor: pointer; }
 
@@ -2073,7 +2183,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .vertical .contract-receipt-container {
   overflow: auto;
   width: 15em;
-  margin-right: 0.25em; }
+  margin-right: 0.5em; }
 
 .vertical .trade-panel {
   flex-direction: row-reverse; }
@@ -2129,13 +2239,19 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .numeric-input {
   display: flex; }
+  .numeric-input .step-down {
+    border-radius: 3px 0 0 3px; }
+  .numeric-input .step-up {
+    border-radius: 0 3px 3px 0; }
   .numeric-input input {
+    border-radius: 0;
     text-align: center;
     width: calc(100% - 5em); }
 
 .btn-flat:hover,
 .start-time-selector label:hover,
 .picker-label:hover,
+.binary-chart-button:hover,
 .duration-input select:hover {
   box-shadow: inset 0 0 0 1px rgba(42, 48, 82, 0.5); }
 
@@ -2168,9 +2284,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex: 1;
   flex-direction: row;
   margin: 2px;
-  padding: 0.25em;
+  padding: 0.5em;
   background: white;
-  border-radius: 2px; }
+  border-radius: 3px; }
 
 .trade-chart-container {
   overflow: hidden;
@@ -2179,7 +2295,22 @@ input[type=time]::-webkit-calendar-picker-indicator {
   align-items: stretch; }
 
 .trade-chart {
-  width: 100%; }
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .trade-chart .binary-chart-zoom-controls {
+    visibility: hidden;
+    opacity: 0; }
+  .trade-chart:hover .binary-chart-zoom-controls {
+    visibility: visible;
+    opacity: 1; }
+  .trade-chart #trade-chart0,
+  .trade-chart #trade-chart1,
+  .trade-chart #trade-chart2,
+  .trade-chart #trade-chart3,
+  .trade-chart #trade-chart4 {
+    height: calc(100% - 2.5em); }
 
 .highcharts-container {
   width: 100% !important; }
@@ -2226,7 +2357,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
     cursor: pointer;
     line-height: 2.5;
     background: rgba(42, 48, 82, 0.1);
-    border-radius: 2px; }
+    border-radius: 3px; }
   .start-time-selector > label + label {
     margin-left: 3px; }
   .start-time-selector > label > input {
@@ -2238,13 +2369,14 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .picker-label {
   cursor: pointer;
-  padding-left: 0.5em;
   line-height: 2.5;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   background: rgba(42, 48, 82, 0.1);
-  border-radius: 2px; }
+  border-radius: 3px; }
+  .picker-label > *:first-child {
+    margin-left: 0.5em; }
   .picker-label .picker-value {
     flex: 1; }
   .picker-label img + .picker-value {
@@ -2293,7 +2425,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .trading-times-card .trading-times-date-picker > input {
     width: 100%; }
   .trading-times-card .trading-times-data {
-    padding: 0.25em; }
+    padding: 0.5em; }
 
 .watchlist-table tr:not(:hover) .close-btn {
   visibility: hidden; }
@@ -2313,7 +2445,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   font-size: 1.2em; }
 
 .watchlist-item {
-  border-radius: 2px; }
+  border-radius: 3px; }
   .watchlist-item svg {
     max-height: 100%; }
   .watchlist-item:hover {
@@ -2357,6 +2489,7 @@ select:active,
 .ios-padder:active,
 .article-preview:active,
 .video-thumbnail:active,
+.binary-chart-button:active,
 .start-time-selector label:active {
   color: white !important;
   background-color: rgba(42, 48, 82, 0.75) !important; }
@@ -2374,6 +2507,7 @@ select:active,
 .inverse .video-thumbnail:active,
 .inverse select:active,
 .inverse [role=tab]:active,
+.inverse .binary-chart-button:active,
 .inverse .start-time-selector label:active {
   color: #2a3052 !important;
   background-color: rgba(255, 255, 255, 0.75) !important; }

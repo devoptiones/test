@@ -1,8 +1,8 @@
 The react/require-extension rule is deprecated. Please use the import/extensions rule from eslint-plugin-import instead.
-Hash: f904dd4ec05b6d958486
-Version: webpack 2.1.0-beta.21
-Time: 76790ms
+Hash: 0545e7dc2e6e27f7a2a4
+Version: webpack 2.1.0-beta.22
+Time: 69800ms
      Asset     Size  Chunks             Chunk Names
-    app.js  1.74 MB       0  [emitted]  main
-app.js.map  9.41 MB       0  [emitted]  main
-    + 1194 hidden modules
+    app.js   1.8 MB       0  [emitted]  main
+app.js.map  9.61 MB       0  [emitted]  main
+    + 1207 hidden modules
