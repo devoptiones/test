@@ -204,7 +204,8 @@ input[type=button],
 .btn-secondary {
   border-radius: 3px;
   cursor: pointer;
-  padding: 0.75em 1em; }
+  padding: 0.75em 1em;
+  margin: 0; }
 
 button,
 input[type=submit],
@@ -659,6 +660,14 @@ header {
 .brand-orange-bg {
   background-color: #e98024; }
 
+.highcharts-container {
+  width: 100% !important; }
+  .highcharts-container svg {
+    width: 100% !important; }
+
+.highcharts-tracker {
+  stroke-opacity: 0; }
+
 .inverse .trade-chart {
   color: #bebebe; }
 
@@ -679,7 +688,7 @@ header {
       background: rgba(190, 190, 190, 0.1) !important; }
 
 .binary-chart-time-frame-picker {
-  height: 30px; }
+  height: 24px; }
 
 .binary-chart-time-frame-picker button {
   background: rgba(190, 190, 190, 0.25) !important;
@@ -687,7 +696,8 @@ header {
 
 .binary-chart-submenu {
   border-radius: 3px;
-  background: white; }
+  background: white;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.5); }
 
 .inverse .binary-chart-submenu {
   background: #161a24; }
@@ -1843,6 +1853,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .inverse .picker-label,
 .inverse select,
 .inverse .start-time-selector > label,
+.inverse .binary-chart-button,
 .inverse .btn-flat {
   background-color: #293144 !important; }
 
@@ -2186,7 +2197,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
   margin-right: 0.5em; }
 
 .vertical .trade-panel {
-  flex-direction: row-reverse; }
+  flex-direction: row-reverse;
+  align-items: stretch; }
 
 .vertical .contract-detail {
   width: 100%;
@@ -2310,12 +2322,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .trade-chart #trade-chart2,
   .trade-chart #trade-chart3,
   .trade-chart #trade-chart4 {
-    height: calc(100% - 2.5em); }
-
-.highcharts-container {
-  width: 100% !important; }
-  .highcharts-container svg {
-    width: 100% !important; }
+    height: calc(100% - 56px); }
 
 .payout-value {
   font-weight: bold;
