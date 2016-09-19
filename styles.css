@@ -665,9 +665,6 @@ header {
   .highcharts-container svg {
     width: 100% !important; }
 
-.highcharts-tracker {
-  stroke-opacity: 0; }
-
 .inverse .trade-chart {
   color: #bebebe; }
 
@@ -692,7 +689,8 @@ header {
 
 .binary-chart-time-frame-picker button {
   background: rgba(190, 190, 190, 0.25) !important;
-  margin-right: 2px; }
+  margin-right: 2px;
+  padding: 0; }
 
 .binary-chart-submenu {
   border-radius: 3px;
@@ -743,8 +741,7 @@ header {
   border-radius: 3px;
   min-width: 28px; }
 
-.binary-chart-button,
-.binary-chart-time-frame-picker > button {
+.binary-chart-button {
   padding: 5px; }
 
 a:not([class]),
@@ -2096,7 +2093,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   padding: 0.125em; }
 
 .modal .contract-details-list {
-  max-width: 16em; }
+  max-width: 20em; }
 
 .modal .contract-details {
   display: flex; }
@@ -2193,7 +2190,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .vertical .trade-params,
 .vertical .contract-receipt-container {
   overflow: auto;
-  width: 15em;
+  width: 16em;
   margin-right: 0.5em; }
 
 .vertical .trade-panel {
@@ -2206,7 +2203,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .vertical .contract-receipt {
   overflow: auto;
-  max-width: 15em;
+  max-width: 16em;
   margin-right: 0.25em; }
 
 .vertical .digit-stats-col {
@@ -2307,10 +2304,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
   align-items: stretch; }
 
 .trade-chart {
-  width: 100%;
-  height: 100%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  flex: 1; }
   .trade-chart .binary-chart-zoom-controls {
     visibility: hidden;
     opacity: 0; }
