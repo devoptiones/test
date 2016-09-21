@@ -2210,7 +2210,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .vertical .trade-params,
 .vertical .contract-receipt-container {
   overflow: auto;
-  width: 16em;
+  width: 15em;
   margin-right: 0.5em; }
 
 .vertical .trade-panel {
