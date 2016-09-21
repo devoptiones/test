@@ -705,13 +705,15 @@ header {
   background: transparent;
   border-radius: 0; }
 
-.binary-chart-picker-item {
+.binary-chart-picker-item,
+.binary-chart-button {
   text-align: left;
   padding: 8px;
   display: flex;
   align-items: center; }
-  .binary-chart-picker-item svg {
-    margin-right: 8px; }
+  .binary-chart-picker-item svg + span,
+  .binary-chart-button svg + span {
+    margin-left: 8px; }
 
 .pressed {
   background: #2a3052 !important; }
@@ -721,14 +723,21 @@ header {
 .binary-chart-zoom-button {
   opacity: 0.75;
   background: rgba(42, 48, 82, 0.25) !important; }
+  .binary-chart-zoom-button svg {
+    fill: #2a3052;
+    margin-bottom: 4px; }
   .binary-chart-zoom-button:hover {
-    opacity: 1; }
+    opacity: 1;
+    box-shadow: 0 0 0 1px #2a3052; }
 
 .inverse .binary-chart-zoom-button {
   opacity: 0.75;
   background: rgba(190, 190, 190, 0.25) !important; }
+  .inverse .binary-chart-zoom-button svg {
+    fill: #bebebe; }
   .inverse .binary-chart-zoom-button:hover {
-    opacity: 1; }
+    opacity: 1;
+    box-shadow: 0 0 0 1px #bebebe; }
 
 .binary-chart-toolbar {
   height: 28px; }
@@ -739,10 +748,20 @@ header {
 .binary-chart-button {
   background: rgba(42, 48, 82, 0.1);
   border-radius: 3px;
-  min-width: 28px; }
+  min-width: 28px;
+  padding: 5px;
+  flex: 1;
+  align-items: center; }
 
-.binary-chart-button {
-  padding: 5px; }
+.binary-chart-button svg,
+.binary-chart-picker-item svg {
+  width: 16px;
+  height: 16px;
+  fill: #161a24; }
+
+.inverse .binary-chart-button svg, .inverse
+.binary-chart-picker-item svg {
+  fill: white; }
 
 a:not([class]),
 a:not([class]):visited {
@@ -1516,7 +1535,8 @@ div[role=tabpanel] {
   padding: 0.25em 0.5em;
   border-radius: 3px;
   position: absolute;
-  display: none; }
+  display: none;
+  z-index: 99; }
 
 div[role=tab] .close-btn {
   background: #2a3052;
