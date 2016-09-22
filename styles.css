@@ -1565,7 +1565,8 @@ nav.sidebar {
 .account-info {
   background: #e98024;
   padding: 0.5em;
-  line-height: 1.5; }
+  line-height: 1.5;
+  word-wrap: break-word; }
 
 .close-btn svg {
   vertical-align: middle; }
@@ -2513,9 +2514,23 @@ select:active,
 .article-preview:active,
 .video-thumbnail:active,
 .binary-chart-button:active,
+.binary-chart-zoom-button:active,
 .start-time-selector label:active {
   color: white !important;
   background-color: rgba(42, 48, 82, 0.75) !important; }
+  .buy-btn:active svg,
+  .btn-flat:active svg,
+  .picker-label:active svg,
+  .close-btn:active svg,
+  select:active svg,
+  [role=tab]:active svg,
+  .ios-padder:active svg,
+  .article-preview:active svg,
+  .video-thumbnail:active svg,
+  .binary-chart-button:active svg,
+  .binary-chart-zoom-button:active svg,
+  .start-time-selector label:active svg {
+    fill: #2a3052 !important; }
 
 .mobile-back-btn:active,
 .mobile-nav-btn:active,
@@ -2531,6 +2546,18 @@ select:active,
 .inverse select:active,
 .inverse [role=tab]:active,
 .inverse .binary-chart-button:active,
+.inverse .binary-chart-zoom-button:active,
 .inverse .start-time-selector label:active {
   color: #2a3052 !important;
   background-color: rgba(255, 255, 255, 0.75) !important; }
+  .inverse .btn-flat:active svg,
+  .inverse .picker-label:active svg,
+  .inverse .close-btn:active svg,
+  .inverse .article-preview:active svg,
+  .inverse .video-thumbnail:active svg,
+  .inverse select:active svg,
+  .inverse [role=tab]:active svg,
+  .inverse .binary-chart-button:active svg,
+  .inverse .binary-chart-zoom-button:active svg,
+  .inverse .start-time-selector label:active svg {
+    fill: #2a3052 !important; }
