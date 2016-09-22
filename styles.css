@@ -676,21 +676,21 @@ header {
     color: #3e3e3e; }
     .trade-chart button:hover,
     .contract-chart button:hover {
-      background: rgba(42, 48, 82, 0.1) !important; }
+      background: rgba(42, 48, 82, 0.1); }
   .inverse .trade-chart button, .inverse
   .contract-chart button {
     color: #bebebe; }
     .inverse .trade-chart button:hover, .inverse
     .contract-chart button:hover {
-      background: rgba(190, 190, 190, 0.1) !important; }
+      background: rgba(190, 190, 190, 0.1); }
 
 .binary-chart-time-frame-picker {
   height: 24px; }
 
-.binary-chart-time-frame-picker button {
+.binary-chart-time-frame-button {
   background: rgba(190, 190, 190, 0.25) !important;
   margin-right: 2px;
-  padding: 0; }
+  padding: 0 !important; }
 
 .binary-chart-submenu {
   border-radius: 3px;
@@ -714,6 +714,16 @@ header {
   .binary-chart-picker-item svg + span,
   .binary-chart-button svg + span {
     margin-left: 8px; }
+
+.binary-chart-button:hover,
+.binary-chart-picker-item:hover,
+.binary-chart-time-frame-button:hover {
+  box-shadow: 0 0 0 1px #3e3e3e; }
+
+.inverse .binary-chart-button:hover, .inverse
+.binary-chart-picker-item:hover, .inverse
+.binary-chart-time-frame-button:hover {
+  box-shadow: 0 0 0 1px #bebebe; }
 
 .pressed {
   background: #2a3052 !important; }
@@ -2514,6 +2524,7 @@ select:active,
 .article-preview:active,
 .video-thumbnail:active,
 .binary-chart-button:active,
+.binary-chart-time-frame-button:active,
 .binary-chart-zoom-button:active,
 .start-time-selector label:active {
   color: white !important;
@@ -2528,6 +2539,7 @@ select:active,
   .article-preview:active svg,
   .video-thumbnail:active svg,
   .binary-chart-button:active svg,
+  .binary-chart-time-frame-button:active svg,
   .binary-chart-zoom-button:active svg,
   .start-time-selector label:active svg {
     fill: #2a3052 !important; }
@@ -2547,6 +2559,7 @@ select:active,
 .inverse [role=tab]:active,
 .inverse .binary-chart-button:active,
 .inverse .binary-chart-zoom-button:active,
+.inverse .binary-chart-time-frame-button:active,
 .inverse .start-time-selector label:active {
   color: #2a3052 !important;
   background-color: rgba(255, 255, 255, 0.75) !important; }
@@ -2559,5 +2572,6 @@ select:active,
   .inverse [role=tab]:active svg,
   .inverse .binary-chart-button:active svg,
   .inverse .binary-chart-zoom-button:active svg,
+  .inverse .binary-chart-time-frame-button:active svg,
   .inverse .start-time-selector label:active svg {
     fill: #2a3052 !important; }
