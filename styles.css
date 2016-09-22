@@ -865,7 +865,8 @@ h6 {
     color: #2a3052 !important; }
 
 .react-material-design-icon,
-.binary-icon {
+.binary-icon,
+.asset-picker-filter-icon path {
   fill: #2a3052; }
 
 .inverse {
@@ -885,7 +886,8 @@ h6 {
   color: #eee; }
 
 .inverse .react-material-design-icon,
-.inverse .binary-icon {
+.inverse .binary-icon,
+.inverse .asset-picker-filter-icon path {
   fill: #bebebe; }
 
 form {
@@ -1272,6 +1274,10 @@ tbody > tr:hover {
     border-radius: 3px; }
   .asset-picker-filter [role=tab] {
     padding: 1em 0.25em; }
+  .asset-picker-filter .tooltip {
+    margin-top: 1em; }
+  .asset-picker-filter [role=tab]:last-child .tooltip {
+    margin-left: -5em; }
 
 .asset-picker-container {
   display: flex;
@@ -1285,6 +1291,10 @@ tbody > tr:hover {
 
 .asset-list tbody tr.selected {
   background-color: rgba(42, 48, 82, 0.25); }
+
+.asset-picker-filter-icon {
+  width: 20px;
+  height: 20px; }
 
 .asset-search {
   width: 100%; }
@@ -1395,7 +1405,7 @@ fieldset {
   margin-bottom: 0.5em; }
 
 .back-btn {
-  fill: #3e3e3e;
+  fill: white;
   width: 3em !important;
   height: 3em !important;
   padding: 0.75em; }
@@ -1945,7 +1955,10 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .mobile-content .info-icon {
     display: none; }
   .mobile-content .contract-details-card {
-    margin: 0.5em; }
+    margin: 0.5em;
+    flex: 1; }
+    .mobile-content .contract-details-card h5 {
+      margin: 0.5em 0; }
   .mobile-content .trade-params {
     display: flex;
     margin-top: 0.5em;
@@ -2361,7 +2374,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .duration-input select {
     max-width: 50%;
     background-color: rgba(42, 48, 82, 0.1);
-    margin-left: 3px;
+    margin-left: 0.25em;
     border: none; }
   .duration-input > * {
     flex: 1; }
@@ -2376,6 +2389,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .forward-starting-input > input {
     max-width: 50%;
     flex: 1; }
+  .forward-starting-input > input + input {
+    margin-left: 0.25em; }
 
 .barrier-input {
   display: flex;
@@ -2393,7 +2408,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
     background: rgba(42, 48, 82, 0.1);
     border-radius: 3px; }
   .start-time-selector > label + label {
-    margin-left: 3px; }
+    margin-left: 0.25em; }
   .start-time-selector > label > input {
     margin: 0 0.25em; }
 
