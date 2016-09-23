@@ -2350,7 +2350,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .trade-chart {
   display: flex;
   flex-direction: column;
-  flex: 1; }
+  flex: 1;
+  min-width: 0; }
   .trade-chart .binary-chart-zoom-controls {
     visibility: hidden;
     opacity: 0; }
