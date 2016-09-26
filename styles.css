@@ -1269,11 +1269,11 @@ tbody > tr:hover {
     padding: 0.5em; }
 
 .asset-picker-filter {
-  min-height: 7em; }
+  min-height: 6em; }
   .asset-picker-filter [role=tablist] {
     border-radius: 3px; }
   .asset-picker-filter [role=tab] {
-    padding: 1em 0.25em; }
+    padding: 0.5em 0.25em; }
   .asset-picker-filter .tooltip {
     margin-top: 1em; }
   .asset-picker-filter [role=tab]:last-child .tooltip {
