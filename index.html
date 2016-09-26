@@ -90,7 +90,11 @@
 </script>
 
 <script src="boot.js?90f1e08a59"></script>
-<!-- <script src="https://cdn.polyfill.io/v2/polyfill.js?features=fetch,Promise,Array.from,Array.prototype.find,Array.prototype.includes,String.prototype.startsWith,String.prototype.includes,Math.sign,Intl.~locale.en,Intl.~locale.id,Intl.~locale.ru,Intl.~locale.fr&unknown=polyfill"></script> -->
+<script>
+    if(navigator.userAgent.indexOf('YaBrowser') === -1) {
+        document.writeln('<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch,Promise,Array.from,Array.prototype.find,Array.prototype.includes,String.prototype.startsWith,String.prototype.includes,Math.sign,Intl.~locale.en,Intl.~locale.id,Intl.~locale.ru,Intl.~locale.fr&unknown=polyfill"><\/script>');
+    }
+</script>
 <script async src="app.js?858a578bd9"></script>
 
 <script>
