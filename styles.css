@@ -204,6 +204,7 @@ input[type=button],
 .btn-secondary {
   border-radius: 3px;
   cursor: pointer;
+  line-height: 1;
   padding: 0.75em 1em;
   margin: 0; }
 
@@ -664,6 +665,17 @@ header {
   width: 100% !important; }
   .highcharts-container svg {
     width: 100% !important; }
+
+.highcharts-loading {
+  background: transparent !important; }
+  .highcharts-loading > span {
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    color: #bebebe !important;
+    background: #161a24 !important; }
+    .inverse .highcharts-loading > span {
+      color: #161a24 !important;
+      background: #bebebe !important; }
 
 .inverse .trade-chart {
   color: #bebebe; }
@@ -1312,6 +1324,10 @@ tbody > tr:hover {
   text-align: left !important;
   padding-left: 3em !important; }
 
+.asset-picker-item svg {
+  width: 24px;
+  height: 24px; }
+
 body {
   height: 100%;
   width: 100%;
@@ -1548,15 +1564,18 @@ div[role=tabpanel] {
   border-radius: 10px; }
 
 .tooltip {
-  background: rgba(255, 255, 255, 0.9);
+  color: #bebebe;
+  background: #161a24;
   border: 1px solid rgba(42, 48, 82, 0.25);
-  color: #2a3052;
   font-weight: bold;
   padding: 0.25em 0.5em;
   border-radius: 3px;
   position: absolute;
   display: none;
   z-index: 99; }
+  .inverse .tooltip {
+    color: #3e3e3e;
+    background: white; }
 
 div[role=tab] .close-btn {
   background: #2a3052;
@@ -1607,6 +1626,7 @@ nav.sidebar {
   background: rgba(42, 48, 82, 0.25); }
   .empty-slate img {
     width: 3em;
+    height: 3em;
     margin-bottom: 0.5em; }
   .empty-slate p {
     text-align: center; }
