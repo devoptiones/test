@@ -1,7 +1,7 @@
-Hash: 23575d5f09f9b8fa00a0
+Hash: 95d251f8383ec4be9f72
 Version: webpack 2.1.0-beta.25
-Time: 81863ms
+Time: 82850ms
      Asset     Size  Chunks             Chunk Names
-    app.js  1.81 MB       0  [emitted]  main
+    app.js  1.82 MB       0  [emitted]  main
 app.js.map   9.9 MB       0  [emitted]  main
     + 1313 hidden modules
