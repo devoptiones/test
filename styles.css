@@ -696,6 +696,14 @@ header {
     .contract-chart button:hover {
       background: rgba(190, 190, 190, 0.1); }
 
+.binary-chart-zoom-controls {
+  visibility: hidden;
+  opacity: 0; }
+
+:hover .binary-chart-zoom-controls {
+  visibility: visible;
+  opacity: 1; }
+
 .binary-chart-time-frame-picker {
   height: 24px; }
 
@@ -2377,12 +2385,6 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex: 1;
   min-width: 0;
   min-height: 0; }
-  .trade-chart .binary-chart-zoom-controls {
-    visibility: hidden;
-    opacity: 0; }
-  .trade-chart:hover .binary-chart-zoom-controls {
-    visibility: visible;
-    opacity: 1; }
   .trade-chart #trade-chart0,
   .trade-chart #trade-chart1,
   .trade-chart #trade-chart2,
