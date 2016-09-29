@@ -808,6 +808,26 @@ header {
 .binary-chart-picker-item svg {
   fill: white; }
 
+.binary-chart-info-bar {
+  padding: 0.5em 1em;
+  opacity: 0.9;
+  border-radius: 3px;
+  background: #161a24;
+  color: #bebebe; }
+  .binary-chart-info-bar .value-row {
+    font-weight: bold; }
+  .binary-chart-info-bar > div {
+    line-height: 1.5;
+    display: flex; }
+    .binary-chart-info-bar > div > span {
+      flex: 1; }
+  .inverse .binary-chart-info-bar {
+    background: white;
+    color: #3e3e3e; }
+
+.highcharts-tooltip {
+  display: none !important; }
+
 a:not([class]),
 a:not([class]):visited {
   color: #2a3052;
@@ -902,7 +922,8 @@ h6 {
 .react-material-design-icon,
 .binary-icon,
 .asset-picker-filter-icon path {
-  fill: #2a3052; }
+  fill: #2a3052;
+  stroke: #2a3052; }
 
 .inverse {
   background: #161a24;
@@ -923,7 +944,8 @@ h6 {
 .inverse .react-material-design-icon,
 .inverse .binary-icon,
 .inverse .asset-picker-filter-icon path {
-  fill: #bebebe; }
+  fill: #bebebe;
+  stroke: #bebebe; }
 
 form {
   margin-bottom: 1em; }
@@ -1311,7 +1333,9 @@ tbody > tr:hover {
     padding: 0.5em 0.25em; }
   .asset-picker-filter .tooltip {
     margin-top: 1em; }
-  .asset-picker-filter [role=tab]:last-child .tooltip {
+  .asset-picker-filter [role=tab]:nth-child(7) .tooltip {
+    margin-left: -3em; }
+  .asset-picker-filter [role=tab]:nth-child(8) .tooltip {
     margin-left: -5em; }
 
 .asset-picker-container {
@@ -2393,19 +2417,6 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex: 1;
   display: flex;
   align-items: stretch; }
-
-.trade-chart {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  min-width: 0;
-  min-height: 0; }
-  .trade-chart #trade-chart0,
-  .trade-chart #trade-chart1,
-  .trade-chart #trade-chart2,
-  .trade-chart #trade-chart3,
-  .trade-chart #trade-chart4 {
-    height: calc(100% - 56px); }
 
 .payout-value {
   font-weight: bold;
