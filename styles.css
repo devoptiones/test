@@ -925,8 +925,7 @@ h6 {
 .react-material-design-icon,
 .binary-icon,
 .asset-picker-filter-icon path {
-  fill: #2a3052;
-  stroke: #2a3052; }
+  fill: #2a3052; }
 
 .inverse {
   background: #161a24;
@@ -947,8 +946,7 @@ h6 {
 .inverse .react-material-design-icon,
 .inverse .binary-icon,
 .inverse .asset-picker-filter-icon path {
-  fill: #bebebe;
-  stroke: #bebebe; }
+  fill: #bebebe; }
 
 form {
   margin-bottom: 1em; }
@@ -2344,8 +2342,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
     flex: 1; }
   .horizontal .trade-params .barrier-picker {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
+    flex-direction: row; }
+    .horizontal .trade-params .barrier-picker .param-row + .param-row {
+      margin-left: 0.25em; }
 
 .horizontal .contract-detail {
   flex-direction: column;
