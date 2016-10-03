@@ -36,9 +36,18 @@
               (q.q ? ('?' + q.q) : '') +
               l.hash
             );
+           }
+         }
+        }(window.location))
+
+        var lastTouchEnd = 0;
+        document.documentElement.addEventListener('touchend', function (event) {
+          var now = (new Date()).getTime();
+          if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
           }
-        }
-      }(window.location))
+          lastTouchEnd = now;
+        }, false);
     </script>
 </head>
 
@@ -95,7 +104,7 @@
         document.writeln('<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch,Promise,Array.from,Array.prototype.find,Array.prototype.includes,String.prototype.startsWith,String.prototype.includes,Math.sign,Intl.~locale.en,Intl.~locale.id,Intl.~locale.ru,Intl.~locale.fr&unknown=polyfill"><\/script>');
     }
 </script>
-<script async src="app.js?7631bec074"></script>
+<script async src="app.js?14ddf49846"></script>
 
 <script>
     window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
