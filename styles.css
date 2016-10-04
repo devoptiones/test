@@ -717,7 +717,7 @@ header {
   .trade-chart #trade-chart2,
   .trade-chart #trade-chart3,
   .trade-chart #trade-chart4 {
-    height: calc(100% - 60px); }
+    flex: 1; }
 
 .binary-chart-time-frame-picker {
   height: 24px; }
