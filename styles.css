@@ -812,20 +812,23 @@ header {
   fill: white; }
 
 .binary-chart-info-bar {
-  padding: 0.5em 1em;
-  opacity: 0.9;
+  padding: 0.25em 0.5em;
   border-radius: 3px;
-  background: #161a24;
+  background: rgba(22, 26, 36, 0.75);
+  border: 1px solid #161a24;
   color: #bebebe; }
   .binary-chart-info-bar .value-row {
     font-weight: bold; }
+  .binary-chart-info-bar .ohlc-row {
+    text-transform: uppercase; }
   .binary-chart-info-bar > div {
     line-height: 1.5;
     display: flex; }
     .binary-chart-info-bar > div > span {
       flex: 1; }
   .inverse .binary-chart-info-bar {
-    background: white;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid white;
     color: #3e3e3e; }
 
 .highcharts-tooltip {
