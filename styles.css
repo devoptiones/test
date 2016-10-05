@@ -1738,7 +1738,8 @@ nav.sidebar {
   margin-bottom: 0.5rem; }
 
 .drop-down-wrapper {
-  position: absolute; }
+  position: absolute;
+  z-index: 90000; }
 
 .drop-down {
   display: flex;
@@ -1746,7 +1747,6 @@ nav.sidebar {
   max-width: 80vw;
   overflow: auto;
   position: absolute;
-  z-index: 10000;
   background: white;
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.5);
   border-radius: 3px; }
