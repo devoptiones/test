@@ -717,15 +717,18 @@ header {
   .trade-chart #trade-chart2,
   .trade-chart #trade-chart3,
   .trade-chart #trade-chart4 {
-    flex: 1; }
+    flex: 1;
+    max-height: calc(100% - 56px); }
 
 .binary-chart-time-frame-picker {
   min-height: 24px; }
 
 .binary-chart-time-frame-button {
   background: rgba(190, 190, 190, 0.25) !important;
-  margin-right: 2px;
   padding: 0 !important; }
+
+.binary-chart-time-frame-button + .binary-chart-time-frame-button {
+  margin-left: 2px; }
 
 .binary-chart-submenu {
   border-radius: 3px;
@@ -2340,7 +2343,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .horizontal .trade-params {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-top: 0.5em; }
   .horizontal .trade-params > * {
     flex: 1; }
   .horizontal .trade-params .barrier-picker {
@@ -2413,7 +2417,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex: 1;
   flex-direction: row;
   margin: 2px;
-  padding: 0.5em;
+  padding: 0.25em;
   background: white;
   border-radius: 3px; }
 
