@@ -720,7 +720,7 @@ header {
     flex: 1; }
 
 .binary-chart-time-frame-picker {
-  height: 24px; }
+  min-height: 24px; }
 
 .binary-chart-time-frame-button {
   background: rgba(190, 190, 190, 0.25) !important;
@@ -787,7 +787,7 @@ header {
     box-shadow: 0 0 0 1px #bebebe; }
 
 .binary-chart-toolbar {
-  height: 30px;
+  min-height: 30px;
   margin-bottom: 2px; }
 
 .binary-chart-toolbar > * {
