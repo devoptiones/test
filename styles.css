@@ -680,21 +680,19 @@ header {
 .inverse .trade-chart {
   color: #bebebe; }
 
-.trade-chart,
-.contract-chart {
+.trade-chart button,
+.contract-chart button {
   color: #3e3e3e; }
-  .trade-chart button,
-  .contract-chart button {
-    color: #3e3e3e; }
-    .trade-chart button:hover,
-    .contract-chart button:hover {
-      background: rgba(42, 48, 82, 0.1); }
-  .inverse .trade-chart button, .inverse
-  .contract-chart button {
-    color: #bebebe; }
-    .inverse .trade-chart button:hover, .inverse
-    .contract-chart button:hover {
-      background: rgba(190, 190, 190, 0.1); }
+  .trade-chart button:hover,
+  .contract-chart button:hover {
+    background: rgba(42, 48, 82, 0.1); }
+
+.inverse .trade-chart button, .inverse
+.contract-chart button {
+  color: #bebebe; }
+  .inverse .trade-chart button:hover, .inverse
+  .contract-chart button:hover {
+    background: rgba(190, 190, 190, 0.1); }
 
 .trade-chart .binary-chart-zoom-controls,
 .contract-chart .binary-chart-zoom-controls {
@@ -2012,13 +2010,14 @@ input[type=time]::-webkit-calendar-picker-indicator {
   display: flex;
   align-content: stretch;
   flex-direction: column;
-  overflow: auto;
   width: 100%; }
   .mobile-content .trade-panel {
     margin: 0;
     flex-direction: column; }
   .mobile-content .trade-chart-container {
     margin: -0.25em 0; }
+  .mobile-content .contract-chart {
+    flex: 1; }
   .mobile-content .modal {
     max-width: 360px; }
   .mobile-content .contract-detail {
@@ -2030,10 +2029,18 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .mobile-content .info-icon {
     display: none; }
   .mobile-content .contract-details-card {
-    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5em 0.5em;
     flex: 1; }
     .mobile-content .contract-details-card h5 {
       margin: 0.5em 0; }
+    .mobile-content .contract-details-card *[role=tablist] {
+      margin-bottom: 0.5em; }
+  .mobile-content .contract-details-tabs {
+    flex: 1;
+    display: flex;
+    flex-direction: column; }
   .mobile-content .trade-params {
     display: flex;
     margin-top: 0.5em;
@@ -2069,6 +2076,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
     .mobile-content .param-row > .param-field {
       flex: 2; }
   .mobile-content .contract-receipt {
+    overflow: auto;
     margin: 0; }
   .mobile-content tbody tr {
     cursor: pointer; }
