@@ -776,22 +776,20 @@ header {
     fill: #bebebe; }
 
 .binary-chart-zoom-button {
-  opacity: 0.75;
-  background: rgba(42, 48, 82, 0.25) !important; }
+  background: rgba(42, 48, 82, 0.1) !important; }
   .binary-chart-zoom-button svg {
     fill: #2a3052;
     margin-bottom: 4px; }
   .binary-chart-zoom-button:hover {
-    opacity: 1;
+    background: rgba(42, 48, 82, 0.2) !important;
     box-shadow: 0 0 0 1px #2a3052; }
 
 .inverse .binary-chart-zoom-button {
-  opacity: 0.75;
-  background: rgba(190, 190, 190, 0.25) !important; }
+  background: rgba(190, 190, 190, 0.1) !important; }
   .inverse .binary-chart-zoom-button svg {
     fill: #bebebe; }
   .inverse .binary-chart-zoom-button:hover {
-    opacity: 1;
+    background: rgba(190, 190, 190, 0.2) !important;
     box-shadow: 0 0 0 1px #bebebe; }
 
 .binary-chart-toolbar {
