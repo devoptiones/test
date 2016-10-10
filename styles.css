@@ -2323,7 +2323,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .vertical .contract-receipt-container {
   overflow: auto;
   width: 15em;
-  margin-right: 0.5em; }
+  margin-right: 0.25em;
+  padding-right: 0.25em; }
 
 .vertical .trade-panel {
   flex-direction: row-reverse;
