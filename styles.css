@@ -758,7 +758,7 @@ header {
   align-items: center; }
   .binary-chart-picker-item svg + span,
   .binary-chart-button svg + span {
-    margin-left: 8px; }
+    margin-left: 4px; }
 
 .binary-chart-button:hover,
 .binary-chart-picker-item:hover,
