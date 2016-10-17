@@ -2052,6 +2052,10 @@ input[type=time]::-webkit-calendar-picker-indicator {
     flex-direction: column;
     flex-wrap: nowrap;
     min-height: 16em; }
+    .mobile-content .trade-params .duration-input .numeric-input .btn-flat {
+      flex: 1 2 10%; }
+    .mobile-content .trade-params .duration-input .numeric-input input {
+      flex: 2 1; }
   .mobile-content .sell-at-market-btn,
   .mobile-content .buy-again-btn {
     width: 100%;
@@ -2228,7 +2232,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
   max-width: 20em; }
 
 .modal .contract-details {
-  display: flex; }
+  display: flex;
+  height: 60vh; }
 
 .modal .contract-receipt {
   max-width: 25em;
@@ -2298,6 +2303,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
     padding: 0.5em; }
   .statement-card .statement-row {
     cursor: pointer; }
+
+.trade-params.greyout {
+  opacity: 0.6; }
 
 .vertical .errorfield {
   margin-bottom: 0.5em; }
