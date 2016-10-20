@@ -2167,9 +2167,15 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .mobile-page {
     font-size: 11px; } }
 
-.news-list-card,
 .article {
   font-size: 1.2em; }
+
+.news-list-card {
+  display: flex;
+  flex-direction: column; }
+
+.article-picker {
+  width: 100%; }
 
 .article {
   padding: 0.5em; }
