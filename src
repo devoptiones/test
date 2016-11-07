@@ -1,7 +1,22 @@
-Hash: ab287d8ce19f98e31f4c
+Hash: 9ef6097f10392cafe63b
 Version: webpack 2.1.0-beta.25
-Time: 147085ms
+Time: 99931ms
      Asset     Size  Chunks             Chunk Names
-    app.js  1.83 MB       0  [emitted]  main
-app.js.map  9.95 MB       0  [emitted]  main
-    + 1325 hidden modules
+    app.js  1.91 MB       0  [emitted]  main
+app.js.map  10.4 MB       0  [emitted]  main
+    + 1248 hidden modules
+
+WARNING in ./src/settings/SettingsUI.js
+
+/Users/boris/Code/binary/next-gen/src/settings/SettingsUI.js
+  16:18  warning  'highContrast' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (0 errors, 1 warning)
+
+ @ ./src/settings/SettingsCard.js 1:1046-1069
+ @ ./src/settings/SettingsContainer.js
+ @ ./src/settings/SettingsMobile.js
+ @ ./src/_routes/MobileRoutes.js
+ @ ./src/_routes/index.js
+ @ ./src/_store/root.js
+ @ ./src/index.js
