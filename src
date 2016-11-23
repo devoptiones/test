@@ -1,10 +1,12 @@
-Hash: 9ef6097f10392cafe63b
-Version: webpack 2.1.0-beta.25
-Time: 99931ms
+Hash: 09e508e9a2c8bf159f99
+Version: webpack 2.1.0-beta.27
+Time: 93018ms
      Asset     Size  Chunks             Chunk Names
     app.js  1.91 MB       0  [emitted]  main
 app.js.map  10.4 MB       0  [emitted]  main
-    + 1248 hidden modules
+    + 1252 hidden modules
+
+WARNING in DedupePlugin: This plugin was removed from webpack. remove it from configuration.
 
 WARNING in ./src/settings/SettingsUI.js
 

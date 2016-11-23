@@ -2272,6 +2272,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .settings-card button {
     width: 100%; }
 
+.settings-ui,
 .settings-personal-page,
 .settings-change-password,
 .settings-cashier-lock,
